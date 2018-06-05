@@ -277,8 +277,8 @@ blockquote {
 
 .portfolio-filter > li a.active {
     color: #FFF;
-    background: #00b29e;
-    border: 2px solid #00b29e;
+    background: #CAB276;
+    border: 2px solid #CAB276;
 }
 
 .portfolio-items > li {
@@ -351,7 +351,7 @@ blockquote {
     -o-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    border-bottom: 4px solid #00b29e;
+    border-bottom: 4px solid #CAB276;
 }
 
 .portfolio-item h5:after {
@@ -492,7 +492,7 @@ div.pp_overlay {
     border-radius: 0;
     list-style: none;
     margin: 0 0 20px;
-    background: #00b29e;
+    background: #CAB276;
     text-align: center;
     padding: 30px 0;
 }
@@ -894,7 +894,7 @@ ul.tag-cloud li {
 
 .team-member:hover .img-thumbnail {
     background: transparent;
-    background-color: #00b29e;
+    background-color: #CAB276;
 }
 
 .team-member .img-thumbnail {
@@ -1028,7 +1028,7 @@ ul.tag-cloud li {
     line-height: 68px;
     color: #fff;
     margin-right: 15px;
-    background-color: #00b29e;
+    background-color: #CAB276;
     text-align: center;
     display: block;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
@@ -1040,8 +1040,8 @@ ul.tag-cloud li {
 
 .service-block:hover .fa-md {
     background: transparent;
-    color: #00b29e;
-    box-shadow: 0 0 0 4px #00b29e;
+    color: #CAB276;
+    box-shadow: 0 0 0 4px #CAB276;
 }
 
 .service-block .media-heading {
@@ -1233,7 +1233,7 @@ ul.rss li::before {
 
 #footer a:hover,
 #footer-wrapper a:hover {
-    color: #00b29e;
+    color: #CAB276;
 }
 
 #footer ul {
@@ -1590,6 +1590,17 @@ img.author-box-image {
     color: #f5f5f5;
 }
 
+.test-section{
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    background-image: url('images/eja/galeria-portal/unam-logo.jpg');
+    color: #f5f5f5;
+}
+
+.test-section a {
+    color: #f5f5f5;
+}
+
 
 /*-----------------------------------------------------------------------------------*/
 
@@ -1610,15 +1621,15 @@ img.author-box-image {
 
 .btn-outlined.btn-primary {
     background: none;
-    border: 2px solid #00b29e;
-    color: #00b29e;
+    border: 2px solid #CAB276;
+    color: #CAB276;
 }
 
 .btn-outlined.btn-primary:hover,
 .btn-outlined.btn-primary:active {
     color: #FFF;
-    background: #00b29e;
-    border-color: #00b29e: ;
+    background: #CAB276;
+    border-color: #CAB276: ;
 }
 
 .btn-outlined.btn-success {
@@ -1677,7 +1688,7 @@ img.author-box-image {
 
 .btn-outlined.btn-white:hover,
 .btn-outlined.btn-white:active {
-    color: #00b29e;
+    color: #CAB276;
     background: #fff;
 }
 
@@ -1908,7 +1919,7 @@ img.author-box-image {
 }
 
 .tile-progress.tile-cyan .tile-footer {
-    background: #00b29e;
+    background: #CAB276;
     color: #fff;
 }
 
@@ -1996,7 +2007,7 @@ img.author-box-image {
 }
 
 .testimonial-list-item:hover blockquote {
-    border-left: 4px solid #00b29e;
+    border-left: 4px solid #CAB276;
 }
 
 .quote-author-list {
@@ -2304,4 +2315,26 @@ img.author-box-image {
     #footer-wrapper {
         position: relative !important;
     }
+}
+
+.texto-azul{
+    color: #091f92;
+}
+
+.texto-dorado{
+    color: #CAB276;
+}
+
+.caja-dorada{
+    background-color: #CAB276;
+    color: white;
+}
+
+.caja-azul{
+    background-color: #091f92;
+    color: white;
+}
+
+.justificado{
+    text-align: justify;
 }

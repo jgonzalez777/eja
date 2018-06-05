@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | Impact By Distinctive Themes</title>
+    <title>Enlace Jurídico Académico</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/pe-icons.css" rel="stylesheet">
@@ -22,6 +22,8 @@
     <link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" href="images/ico/apple-touch-icon-57x57.png">
+    
+    
 
     <script type="text/javascript">
     jQuery(document).ready(function($){
@@ -31,7 +33,8 @@
 	        "images/eja/home/f2.jpg",
 	        "images/eja/home/f3.jpg",
             "images/eja/home/f4.jpg",
-            "images/eja/home/f5.jpg"
+            "images/eja/home/f5.jpg",
+            "images/eja/home/f6.jpg"
 	    ], {duration: 5000, fade: 500, centeredY: true });
 
 		$("#mapwrapper").gMap({ controls: false,
@@ -56,7 +59,7 @@
 </head><!--/head-->
 <body>
 <div id="preloader"></div>
-    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+    <header id="header-section" class="navbar navbar-inverse navbar-fixed-top " role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -67,12 +70,12 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="about-us.html">Nosotros</a></li>
-                    <li><a href="portfolio.html">Actividades</a></li>
+                    <li><a href="#main-slider">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#actividades">Actividades</a></li>
                     <li><a href="contact-us.html">Participa</a></li>
-                    <li><a href="contact-us.html">Novedades</a></li>
-                    <li><a href="contact-us.html">Galería</a></li>
+                    <li><a href="contact-us.html">Novedades</a></li>                    
                     <li><a href="contact-us.html">Revista Electrónica</a></li>
                     <li><a href="contact-us.html">Contacto</a></li>                     
                 </ul>
@@ -107,32 +110,32 @@
         <!--
             ######### INICIO QUIENES SOMOS ########
         -->
-        <section id="about-us" class="white">
+        <section id="nosotros" class="white">
             <div class="container">
                 <div class="gap"></div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">¿Quiénes somos?</h2>
+                            <h2 class="main-title texto-dorado">¿Quiénes somos?</h2>
                             <hr>
-                            <p>Bienvenidos</p>
+                            <p class="texto-dorado">Bienvenidos</p>
                         </div>                
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 fade-up">
-                        <p>Un grupo de docentes de la Facultad de Derecho de la Universidad Nacional Autónoma de México ( UNAM ), alentados por la reflexión y disertación de diversos tópicos, acordamos realizar una serie de actividades académicas, para analizar diversos temas de relevancia nacional e internacional.</p>
+                        <p class="justificado">Un grupo de docentes de la Facultad de Derecho de la Universidad Nacional Autónoma de México ( UNAM ), alentados por la reflexión y disertación de diversos tópicos, acordamos realizar una serie de actividades académicas, para analizar diversos temas de relevancia nacional e internacional.</p>
 
-                        <p>Por el interés generado en los referidos encuentros académicos, hemos decidido ampliar estas actividades mediante la publicación de libros, ensayos, artículos, reseñas, revistas, grabación de videos y cápsulas informativas de temas relevantes, mismos que se contienen en el presente sitio web.</p>
+                        <p class="justificado">Por el interés generado en los referidos encuentros académicos, hemos decidido ampliar estas actividades mediante la publicación de libros, ensayos, artículos, reseñas, revistas, grabación de videos y cápsulas informativas de temas relevantes, mismos que se contienen en el presente sitio web.</p>
                     </div>
-                    <div class="col-md-4 fade-up">
+                    <div class="col-md-4 fadex|-up">
 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
-                            <h2 class="">Directorio</h2>
+                            <h2 class="texto-dorado">Directorio</h2>
                         </div>                
                     </div>
                 </div>
@@ -142,22 +145,49 @@
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Dra. Alma de los Ángeles Rios Ruiz</p>
-                                <a href="mailto:almarios@enlacejuridicoacademico.com.mx">almarios@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:almarios@enlacejuridicoacademico.com.mx"><small>almarios@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Presidente</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
-                        </div>
+                        </div>                        
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Mtra. Guadalupe Ramírez Gaitan</p>
-                                <a href="mailto:guadaluperam@enlacejuridicoacademico.com.mx">guadaluperam@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:guadaluperam@enlacejuridicoacademico.com.mx"><small>guadaluperam@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Vicepresidente</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
                         </div>
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Dr. Ruperto Patiño Manffer</p>
-                                <a href="mailto:rupertopat@enlacejuridicoacademico.com.mx">rupertopat@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:rupertopat@enlacejuridicoacademico.com.mx"><small>rupertopat@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Secretario Académico</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
                         </div>
                     </div>
@@ -165,22 +195,49 @@
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Mtra. Zaudisareth Bobadilla Castillo</p>
-                                <a href="mailto:zbobadillac@enlacejuridicoacademico.com.mx">zbobadillac@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:zbobadillac@enlacejuridicoacademico.com.mx"><small>zbobadillac@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Vicepresidente</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
                         </div>
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Dr. José Luis López Chavarría</p>
-                                <a href="mailto:lopezchavarria@enlacejuridicoacademico.com.mx">lopezchavarria@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:lopezchavarria@enlacejuridicoacademico.com.mx"><small>lopezchavarria@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Secretario General</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
                         </div>
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Mtro. Alejo Martínez Vendrell</p>
-                                <a href="mailto:alejo.martinez@enlacejuridicoacademico.com.mx">alejo.martinez@enlacejuridicoacademico.com.mx</a>
+                                <a href="mailto:alejo.martinez@enlacejuridicoacademico.com.mx"><small>alejo.martinez@enlacejuridicoacademico.com.mx</small></a>
                                 <small>Secretario de Extensión</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul">
+                                        Curriculum
+                                    </button>                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada">
+                                        Publicaciones
+                                    </button>
+                                </div>
                             </blockquote>
                         </div>
                     </div>
@@ -188,71 +245,176 @@
 
                 <div class="gap"></div>
                 <div class="center gap fade-down section-heading">
-                    <h2 class="main-title">Meet The Team</h2>
+                    <h3 class="texto-dorado">Grupo fundador</h3>
                     <hr>
-                    <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
                 </div> 
                 <div class="gap"></div>
-
                 <div id="meet-the-team" class="row">
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team01.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>  
-                            </div>
                             <div class="team-content fade-up">
-                                <h5>Daniel Jones<small class="role muted">Web Design</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Mtra. Guadalupe Ramírez Gaitan</h5>
+                                <p>Grupo fundador</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-3 col-xs-6">
+                    <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team02.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>  
-                            </div>
                             <div class="team-content fade-up">
-                                <h5>John Smith<small class="role muted">Marketing Director</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Dr. Alma de los Ángeles Rios Ruiz</h5>
+                                <p>Vicepresidente</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
                             </div>
                         </div>
-                    </div>        
-                    <div class="col-md-3 col-xs-6">
+                    </div> 
+                    <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team03.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>  
-                            </div>
                             <div class="team-content fade-up">
-                                <h5>Dave Gorman<small class="role muted">Web Design</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Dr. José Luis López Chavarría</h5>
+                                <p>Vicepresidente</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
                             </div>
                         </div>
-                    </div>        
-                    <div class="col-md-3 col-xs-6">
+                    </div> 
+                    <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
-                            <div class="team-image">
-                                <img class="img-responsive img-thumbnail bounce-in" src="images/team/team04.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/team/team04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                                </div>  
-                            </div>  
                             <div class="team-content fade-up">
-                                <h5>Steve Smith<small class="role muted">Sales Assistant</small></h5>
-                                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor.</p>
-                                <a class="btn btn-social btn-facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                <h5>Mtra. Zaudisareth Bobadilla Castillo</h5>
+                                <p>Secretario General</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Dr. Ruperto Patiño Manffer</h5>
+                                <p>Secretario Académico</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                           
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtra. Verónica V. Bazán Ortega</h5>
+                                <p>Secretaria Administrativa</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtro. Alejo Martínez Vendrell</h5>
+                                <p>Secretario de Extensión</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtro. Fernando Garzón Abreu</h5>
+                                <p>Secretario de Relaciones Públicas</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtro. Armando Escamilla Gutiérrez</h5>
+                                <p>Secretario <br>de Difusión</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtra. Rosalba Becerril Velazquez</h5>
+                                <p>Secretaria de Relaciones Interinstitucionales</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtro. Ulises Ramírez Gil</h5>
+                                <p>Secretario de Asuntos Internacionales</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Dra. Gloria Moreno Navarro</h5>
+                                <p>Coordinación de Actualización de Recursos Humanos</p>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#">
+                                    <i class="fa fa-user"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -265,16 +427,114 @@
         ###### FIN QUIÉNES SOMOS #####
         -->
 
+        
 
-        <section id="services" class="white">
+        <!--
+            #######
+            GALERÍA
+            #######
+        -->
+        <section id="galeria" class="divider-section">
+            <div class="container">
+                <div class="gap"></div> 
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title texto-dorado">GALERÍA</h2>
+                    <hr>
+                    <p class="texto-dorado">Conoce nuestra galería de eventos</p>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/1.jpg" alt="" style="width: 96%;">
+                            <h5 class="texto-dorado">Presentación de Libro<br><small>Comercio Exterior y <br>los Derechos Humanos</small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/2.png" alt="" style="width: 53%;">
+                            <h5 class="texto-dorado">Conferencia<br><small>Comercio Exterior y <br>los Derechos Humanos</small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/3.png" alt="" style="width: 46%;">
+                            <h5 class="texto-dorado">Conferencia<br><small>"Seminario "El escenario migratorio<br> en la relación México - Estados<br> Unidos de América"</small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/4.png" alt="" style="width: 46%;">
+                            <h5 class="texto-dorado">Conferencia<br><small>"Relación Bilateral <br>México - Estados Unidos de América,<br> en el Marco del Libre Comercio"
+                            </small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/5.png" alt="" style="width: 53%;">
+                            <h5 class="texto-dorado">Conferencia<br><small>"Equidad de Género, <br>en el marco Internacional<br> del Día de la Mujer"
+                            </small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="portfolio-item apps isotope-item">
+                        <div class="item-inner center">
+                            <img src="images/eja/galeria-portal/6.png" alt="" style="width: 59%;">
+                            <h5 class="texto-dorado">Conferencia<br><small>"Defensa de los Particulares<br> ante las Entidades Financieras"</small></h5>
+                            <div class="overlay">
+                                <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
+                            </div>           
+                        </div> 
+                    </div>
+                </div>
+                <div class="center gap fade-down section-heading">
+                    <button type="button" class="btn btn-outline-info caja-azul">Conóce toda la galería de fotografías</button>
+                </div>                                           
+            </div>
+        </section>
+        <!--
+            ######
+            FIN GALERIA
+            ######
+        -->
+
+        <!--
+            #########
+            INICIO ACTIVIDADES
+            #########
+        -->
+        <section id="actividades" class="white">
             <div class="container">
             <div class="gap"></div> 
                 <div class="row">
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Stuff We Do</h2>
+                            <h2 class="main-title">ACTIVIDADES</h2>
                             <hr>
-                            <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
+                            <p>Conoce nuestras últimas actividades académicas</p>
                         </div>                
                     </div>
                 </div>
@@ -283,22 +543,14 @@
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
                             <div class="pull-left bounce-in">
-                                <i class="fa fa-camera fa fa-md"></i>
+                                <i class="fa fa-book fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">Photography</h3>
-                                <p>Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-block">
-                            <div class="pull-left bounce-in">
-                                <i class="fa fa-thumbs-o-up fa fa-md"></i>
-                            </div>
-                            <div class="media-body fade-up">
-                                <h3 class="media-heading">Marketing</h3>
-                                <p>Unfeeling agreeable suffering it on smallness newspaper be. So come must time no as. Do on unpleasing possession as of unreserved.</p>
+                                <h3 class="media-heading">Presentación de Libro</h3>
+                                <p>"El Derecho Humano a la Salud frente a la Responsabilidad Médico-Legal: UNA VISIÓN COMPARADA"</p>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-1">
+                                    ver detalles
+                                </button>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -308,8 +560,26 @@
                                 <i class="fa fa-ticket fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">Event Management</h3>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                                <h3 class="media-heading">Conferencia</h3>
+                                <p>"COMERCIO EXTERIOR Y LOS DERECHOS HUMANOS"</p>    
+                                <br>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-2">
+                                    ver detalles
+                                </button>                            
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-block">
+                            <div class="pull-left bounce-in">
+                                <i class="fa fa-star fa fa-md"></i>
+                            </div>
+                            <div class="media-body fade-up">
+                                <h3 class="media-heading">Seminario</h3>
+                                <p>"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</p>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-3">
+                                    ver detalles
+                                </button>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
@@ -322,36 +592,49 @@
                                 <i class="fa fa-star fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">Star Gazing</h3>
-                                <p>Yet joy exquisite put sometimes enjoyment perpetual now. Behind lovers eat having length horses vanity say had its</p>
+                                <h3 class="media-heading">Seminario</h3>
+                                <p>"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</p>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-4">
+                                    ver detalles
+                                </button>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
                             <div class="pull-left bounce-in">
-                                <i class="fa fa-cogs fa fa-md"></i>
+                                <i class="fa fa-star fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">Software Support</h3>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                                <h3 class="media-heading">Seminario</h3>
+                                <p>RELACIÓN BILATERAL MÉXICO - ESTADOS UNIDOS DE AMÉRICA, EN EL MARCO DEL LIBRE COMERCIO</p>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-5">
+                                    ver detalles
+                                </button>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
                     <div class="col-md-4 col-sm-6">
                         <div class="service-block">
                             <div class="pull-left bounce-in">
-                                <i class="fa fa-google-plus fa fa-md"></i>
+                                <i class="fa fa-star fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">SEO Services</h3>
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                                <h3 class="media-heading">Seminario</h3>
+                                <p><small>RELACIÓN COMERCIAL MÉXICO - ESTADOS UNIDOS DE AMÉRICA, EN EL MARCO DE LA PRESIDENCIA DE DONALD TRUMP</small></p>
+                                <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-6">
+                                    ver detalles
+                                </button>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.row-->
             </div>
-            <div class="gap"></div>
+            <br>
+            <div class="center gap fade-down section-heading">
+                <button type="button" class="btn btn-outline-info caja-dorada">Conóce todas las actividades</button>
+            </div>
+            <!--<div class="gap"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -430,12 +713,12 @@
 	                    </div>
 	                </div>
 	            </div><!--/.row-->
-	            <div class="gap"></div>
-        	</div>
+
+	        <div class="gap"></div>        	
         </section>
 
 
-		<section id="single-quote" class="divider-section"> 	            	        
+		<section id="single-quote" class="test-section"> 	            	        
 	            <div class="container">
 	            	<div class="gap"></div> 
 	                <div class="row">                        
@@ -498,108 +781,8 @@
                 </div>
             </div>
             <div class="gap"></div> 
-        </section>
+        </section>       
 
-        <section id="portfolio" class="white">
-       		<div class="container">
-	        	<div class="gap"></div> 
-		        	<div class="center gap fade-down section-heading">
-		                <h2 class="main-title">Examples Of Excellence</h2>
-		                <hr>
-		                <p>She evil face fine calm have now. Separate screened he outweigh of distance landlord.</p>
-		            </div> 
-<ul class="portfolio-filter fade-down center">
-                        <li><a class="btn btn-outlined btn-primary active" href="#" data-filter="*">All</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".apps">Apps</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".nature">Nature</a></li>
-                        <li><a class="btn btn-outlined btn-primary" href="#" data-filter=".design">Design</a></li>
-                    </ul><!--/#portfolio-filter-->
-
-                    <ul class="portfolio-items col-3 isotope fade-up">
-                        <li class="portfolio-item apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio01.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio02.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>              
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item bootstrap design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio03.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>        
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio04.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio05.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
-                                </div>    
-                            </div>       
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio06.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla design apps isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio07.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item joomla nature isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio08.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>          
-                                </div>    
-                            </div>       
-                        </li><!--/.portfolio-item-->
-                        <li class="portfolio-item wordpress design isotope-item">
-                            <div class="item-inner">
-                                <img src="images/portfolio/folio09.jpg" alt="">
-                                <h5>Portfolio Project</h5>
-                                <div class="overlay">
-                                    <a class="preview btn btn-outlined btn-primary" href="images/portfolio/folio09.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>           
-                                </div>           
-                            </div>           
-                        </li><!--/.portfolio-item-->
-                    </ul>
-                </div>
-            </section>
 
             <section id="testimonial-carousel" class="divider-section">
             <div class="gap"></div>
@@ -1086,6 +1269,307 @@
                 </div>
             </div>
         </footer><!--/#footer-->
+    </div>
+
+    <!--
+        ##################
+        M O D A L E S 
+    -->
+    <!--ACTIVIDAES-->
+    <!-- Modal -->
+    <div class="modal fade" id="act-mod-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">"El Derecho Humano a la Salud frente a la Responsabilidad Médico-Legal: UNA VISIÓN COMPARADA"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Auditorio Eduardo García Maynez<br> 
+                        16 de Noviembre<br> 
+                        11:00 a 13:00 hrs.<br>
+                        Autores:<br> 
+                        Dra. Alma de los Ángeles Ríos Ruiz<br>
+                        Dr. Antonio Fuente del Campo
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="act-mod-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">"COMERCIO EXTERIOR Y LOS DERECHOS HUMANOS"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Auditorio Dr. Ignacio Burgo Orihuela<br>
+                        08 de junio de 2017<br>
+                        07:00 a 09:00 hrs.<br>
+                        Ponente: Dr. Ruperto Patiño Manffer<br> 
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="act-mod-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Eduardo García Máynez<br>
+                        25 de Abril de 2017<br>
+                        11:00 a 13:00 hrs.<br>
+                        Mtro. Tomás Caparroso Franco
+                        Dr. Luis Malpica de la Madrid, 
+                        Dr. Ruperto Patiño Manffer, 
+                        Mtro. Carlos Axell Peñaloza Martínez<br><br>
+
+                        Moderador:<br>
+                        Dra. Alma de los Ángeles Ríos Ruiz<br><br>
+
+                        Coordinan:<br>
+                        Mtra. Silvia Nuñez García.
+                        Mtra. Ma. Guadalupe Ramírez Gaitán.
+                        Dra. Alma de los Ángeles Ríos Ruiz.
+                        Mtra. Zaudisareth Bobadilla Castillo.
+                        Lic. Alejo Martínez Vendrell.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="act-mod-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Eduardo García Máynez<br>
+                        24 de Abril de 2017<br>
+                        11:00 a 13:00 hrs.<br>
+                        Dr. José Dávalos Morales
+                        Dra. Norka López Zamarripa
+                        Dr. Enrique M Loaeza Tovar
+                        Dr. Francisco Venegas Trejo<br><br>
+
+                        Moderador:<br>
+                        Mtra. Ma. Guadalupe Ramírez Gaitán<br><br>
+
+                        Coordinan:<br>
+                        Mtra. Silvia Nuñez García.
+                        Mtra. Ma. Guadalupe Ramírez Gaitán.
+                        Dra. Alma de los Ángeles Ríos Ruiz.
+                        Mtra. Zaudisareth Bobadilla Castillo.
+                        Lic. Alejo Martínez Vendrell.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="act-mod-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">RELACIÓN BILATERAL MÉXICO - ESTADOS UNIDOS DE AMÉRICA, EN EL MARCO DEL LIBRE COMERCIO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Benito Juárez<br>
+                        28 de Marzo de 2017<br>
+                        11:00 a 13:00 hrs.<br><br>
+
+                        Embajador Jorge Eduardo Navarrete<br><br>
+
+                        Moderador:<br>
+                        Mtra. Ma. Guadalupe Ramírez Gaitán<br><br>
+
+                        Coordinan:<br>
+                        Mtra. Silvia Nuñez García.
+                        Mtra. Ma. Guadalupe Ramírez Gaitán.
+                        Dra. Alma de los Ángeles Ríos Ruiz.
+                        Mtra. Zaudisareth Bobadilla Castillo.
+                        Lic. Alejo Martínez Vendrell.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="act-mod-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">EQUIDAD DE GÉNERO EN EL MARCO INTERNACIONAL DE LA MUJER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <p>
+                        Benito Juárez<br>
+                        8 de Marzo de 2017<br>
+                        11:00 a 13:00 hrs.<br><br>
+
+                        Mtra. Ivonne Ortega Pacheco<br>
+                        Magistrada Zulema Mosri Gutiérrez<br>
+                        Mtra. Ruth Zavaleta Salgado<br>
+                        Dra. Catherine Prati Russellete<br>
+                        Lic. Laura Fernández MacGregor<br>
+                        Dra. Consuelo Sirvent Gutiérrez<br>
+                        Dra. Guadalupe Fernández Ruiz<br>
+                        Dra. Norka López Zamarripa<br>
+                        Dr. José Dávalos Morales<br>
+                        Dr. Francisco Vengas Trejo<br><br>
+
+                        Moderador:<br>
+                        Mtra. Ma. Guadalupe Ramírez Gaitán<br><br>
+
+                        Coordinan:<br>
+                        Mtra. Ma. Guadalupe Ramírez Gaitán.<br>
+                        Dra. Alma de los Ángeles Ríos Ruiz.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        ####### FIN MODAL ACTIVIDADES 
+    -->
+
+    
+
+
+
+
+
+
+    <div class="modal fade" id="exampleModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title center texto-dorado" id="exampleModalLabel">Curriculum Dra. Alma de los Ángeles Rios Ruiz</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#act-academica" role="tab" aria-controls="act" aria-selected="true">Grados universitarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile-tab" role="tab" aria-controls="profile" aria-selected="false">Profesor invitado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact-tab" role="tab" aria-controls="contact" aria-selected="false">Cursos en el extranjero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#actividad-tab" role="tab" aria-controls="contact" aria-selected="false">Actividad académica</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="act-academica" role="tabpanel" aria-labelledby="home-tab">
+                            <ul class="list-group">
+                                <li class="list-group-item">Doctora en Derecho, División de Estudios de Posgrado de la Facultad de Derecho de la UNAM, obtención del grado con Mención Honorífica, 1993.</li>
+                                <li class="list-group-item">Estudios de Maestría en Derecho, División de Estudios de Posgrado de la Facultad de Derecho de la UNAM, 1987-1988.</li>
+                                <li class="list-group-item">Estudios de Especialización en Derecho Constitucional y Administrativo, División de Estudios de Posgrado, 1985-1986.</li>
+                                <li class="list-group-item">Estudios de Especialización Judicial en el Instituto de la Judicatura Federal del Poder Judicial de la Federación, 2000.</li>
+                                <li class="list-group-item">Licenciada en Derecho, Facultad de Derecho de la UNAM, obtención del grado con Mención Honorífica, 1985.</li>
+                            </ul>   
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab" role="tabpanel" aria-labelledby="profile-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Profesora invitada de la Universidad de Nebraska–Lincoln.</li>
+                                <li class="list-group-item">Profesora invitada por la Asociación Ecuatoriana de Cirugía Plástica Estética y Reconstructiva, en la ciudad de Cuenca, Ecuador.</li>
+                                <li class="list-group-item">Profesora Invitada de la Universidad de Córdoba, España.</li>
+                                <li class="list-group-item">Profesora invitada de la Universidad de Renmin, China.</li>
+                                <li class="list-group-item">Profesora Invitada de la Universidad Federal de Santa Catarina, Florianapolis, Brasil.</li>
+                                <li class="list-group-item">Profesora invitada por la Sociedad Boliviana de Cirugía Plástica, Estética y Reconstructiva, en la ciudad de Santa Cruz de la Sierra, Bolivia.</li>
+                                <li class="list-group-item">Profesora invitada por la Sociedad Dominicana de Cirugía Plástica, Reconstructiva y Estética, INC. en Punta Cana, República Dominicana.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab" role="tabpanel" aria-labelledby="contact-tab">
+                            <p align="justify">
+                                The Challenges of Mexico’s Future: Leadership and Performance Strategies. Harvard University; John F. Kennedy School of Government. Enero 8-20 2006.
+                            </p>
+                            <p align="justify">
+                                Curso Intensivo de Inglés y Practica Jurídica; Escuela de Extensión de la Universidad Nacional Autónoma de México en Los Ángeles California (ESELA) Julio 6-01-2010
+                            </p>
+                        </div>
+
+                        <div class="tab-pane fade" id="actividad-tab" role="tabpanel" aria-labelledby="actividad-tab">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Profesora de tiempo completo “C” definitivo de la Facultad de Derecho UNAM</li>
+                                <li class="list-group-item">Investigadora Nacional Nivel I del Sistema Nacional de Investigadores del Consejo Nacional de Ciencia y Tecnología.</li>
+                                <li class="list-group-item">Profesora Activa de la Universidad de Durango Santander, Campus Ciudad Juárez, Hermosillo, Nogales, Aguascalientes, Zacatecas, Ciudad Obregón.</li>
+                                <li class="list-group-item">Profesora Activa de la UNIMAYAB, Campus Mérida y Campeche.</li>
+                                <li class="list-group-item">Jefa de la División de Universidad Abierta, Facultad de Derecho. Universidad Nacional Autónoma de México, abril de 2008 a marzo de 2012.</li>
+                                <li class="list-group-item">Evaluadora acreditada por el Consejo Nacional de Ciencia y Tecnología (CONACyT).</li>
+                                <li class="list-group-item">Acreditadora del Consejo para la Acreditación de la Enseñanza del Derecho A.C. (CONAED).</li>
+
+                                <li class="list-group-item">Profesora de Tiempo Completo Titular “C”, área de Derecho Internacional, a partir de mayo de 2008.</li>
+                                <li class="list-group-item">Directora del Área Jurídica del Instituto de Transparencia y Acceso a la Información Pública del Municipio de Cuatitlán Izcalli, Estado de México, enero de 2007 a marzo de 2008.</li>
+                                <li class="list-group-item">Profesora de Tiempo Completo del Instituto Tecnológico de Monterrey, adscrita al Departamento de Derecho, Campus Estado de México, agosto de 2005 a marzo de 2008.</li>
+                                <li class="list-group-item">Directora de Análisis y Proyectos del Instituto Federal de Acceso a la Información Pública Gubernamental, septiembre de 2004 a junio de 2005.</li>
+                                <li class="list-group-item">Subdirectora de Análisis del Instituto Federal de Acceso a la Información Pública Gubernamental, abril a septiembre de 2004.</li>
+                                <li class="list-group-item">Secretaria Auxiliar de la Unidad de Coordinación Jurídica, adscrita a la Oficina del Abogado General de la UNAM, junio de 2002 a marzo de 2004.</li>
+                                <li class="list-group-item">Delegada de Oficinas Jurídicas, adscrita a la Oficina del Abogado General de la UNAM, febrero a junio de 2002.</li>
+                                <li class="list-group-item">Directora de área “B”, adscrita a la Unidad de Asesoría Jurídica y Evaluación del Servicio, del Instituto Federal de Defensoría Pública, del Poder Judicial de la Federación, febrero de 2000 a enero de 2002.</li>
+                                <li class="list-group-item">Subdirectora de área del Instituto de la Judicatura Federal desempeñando labores de docencia en el Curso de Inducción a la Función Judicial y de investigación adscrita a la Secretaria de Investigación, febrero de 1999 a enero de 2000.</li>
+                                <li class="list-group-item">Subcoordinadora Académica de la Especialidad en Derecho Corporativo en la Universidad Panamericana de enero de 1990 a marzo de 1991.</li>
+                                <li class="list-group-item">Representante de la UNAM ante la Comisión Mixta de Escalafón en la Dirección General de Relaciones Laborales de la UNAM, de 1987 a 1989.</li>
+                                <li class="list-group-item">Actuaría, Secretaria Particular y Oficial Judicial del Tercer Tribunal Colegiado en Materia Administrativa del Primer Circuito, 1986-1987.</li>
+                                <li class="list-group-item">Técnica Académica en el Instituto de Investigaciones Jurídica de la UNAM, adscrita a los Departamentos de Legislación y Jurisprudencia, 1982-1984, y encargada del Sistema de Automatización de Biblios-IURE del Instituto de Investigaciones Jurídicas de la UNAM de 1984-1985.</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
