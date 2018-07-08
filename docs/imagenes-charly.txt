@@ -1,0 +1,16 @@
+-index.html
+	images/eja/home/f1.png
+	images/eja/home/f2.png
+	images/eja/home/f3.png
+        images/eja/home/f4.png
+        images/eja/home/f5.png
+        images/eja/home/f6.png
+
+	images/eja/logos/logo1.png
+	images/eja/logos/logo1-sin-letras.png
+	images/eja/icons/maestra.png
+	images/eja/icons/maestro.png
+
+
+
+	

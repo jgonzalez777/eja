@@ -121,7 +121,7 @@ blockquote {
 }
 
 .main-title {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 
@@ -155,7 +155,6 @@ blockquote {
     font-size: 44px;
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
-    text-transform: uppercase;
     letter-spacing: -1px;
     margin-top: 30px;
 }
@@ -167,7 +166,6 @@ blockquote {
     margin-top: 35px;
     font-size: 26px;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 10px 15px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
     z-index: 10px;
@@ -182,7 +180,6 @@ blockquote {
     padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.2);
     display: inline-block;
-    text-transform: uppercase;
 }
 
 #main-slider .carousel .item {
@@ -335,7 +332,6 @@ blockquote {
     text-overflow: ellipsis;
     position: relative;
     border-bottom: 4px solid #f0f0f0;
-    text-transform: uppercase;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -714,7 +710,6 @@ ul.tag-cloud li {
     display: inline-block;
     outline: none;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 0;
     font-size: 15px;
     padding: 10px;
@@ -1072,7 +1067,6 @@ ul.tag-cloud li {
     font-weight: 300;
     font-size: 14px;
     color: #848484;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -1323,7 +1317,6 @@ ul.social > li > a:hover {
 }
 
 .blog .blog-item .entry-meta {
-    text-transform: uppercase;
     font-size: 12px;
     color: #737373;
     margin-bottom: 11px;
@@ -1532,7 +1525,6 @@ img.author-box-image {
 
 .widget-title {
     font-size: 18px;
-    text-transform: uppercase;
 }
 
 
@@ -1614,7 +1606,6 @@ img.author-box-image {
     -moz-transition: all .3s;
     transition: all .3s;
     font-weight: 700;
-    text-transform: uppercase;
     -webkit-box-shadow: none;
     box-shadow: none !important;
 }
@@ -1745,7 +1736,6 @@ img.author-box-image {
 }
 
 .post .author {
-    text-transform: uppercase;
     font-size: 12px;
     color: #737373;
     padding: 10px 0 8px;
@@ -1825,7 +1815,6 @@ img.author-box-image {
 #stats h3 {
     margin: 0;
     font-size: 16px;
-    text-transform: uppercase;
 }
 
 
@@ -2073,7 +2062,6 @@ img.author-box-image {
 }
 
 #contact h3 {
-    text-transform: uppercase;
 }
 
 #mapwrapper {
@@ -2128,7 +2116,6 @@ img.author-box-image {
 .navbar-header h1 {
     color: #fff;
     font-size: 24px;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
 }
@@ -2165,7 +2152,6 @@ img.author-box-image {
 .widget-title {
     margin-top: 0;
     font-size: 16px;
-    text-transform: uppercase;
     margin-bottom: 30px;
     letter-spacing: 2px;
 }
@@ -2184,7 +2170,6 @@ img.author-box-image {
     font-size: 14px;
     letter-spacing: 2px;
     display: block;
-    text-transform: uppercase;  
 }
 
 .overlay .btn-outlined.btn-primary {
@@ -2197,7 +2182,6 @@ img.author-box-image {
 }
 
 .post .author {
-    text-transform: uppercase;
     font-size: 10px;
     color: #737373;
     padding: 10px 0 8px;
@@ -2211,12 +2195,10 @@ img.author-box-image {
 }
 
 .main-title {
-    text-transform: uppercase;
     letter-spacing: 6px;
 }
 
 .section-heading p {
-  text-transform: uppercase;
 }
 
 #content-wrapper {
@@ -2226,7 +2208,6 @@ img.author-box-image {
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
     padding: 15px 15px 15px;
     color: #eee;
-    text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
 }
@@ -2242,7 +2223,6 @@ img.author-box-image {
     margin-top: 35px;
     font-size: 19px;
     font-weight: 400;
-    text-transform: uppercase;
     padding: 10px 15px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px;
     letter-spacing: 4px;
@@ -2265,7 +2245,6 @@ img.author-box-image {
 }
 
 .comments-title {
-    text-transform: uppercase;
     margin-bottom: 60px;
     margin-top: 40px !important;
     font-size: 18px;
@@ -2283,7 +2262,6 @@ img.author-box-image {
 
 .team-content h5 {
     font-size: 16px;
-    text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 2px;
 }
