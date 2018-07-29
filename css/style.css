@@ -2316,3 +2316,140 @@ img.author-box-image {
 .justificado{
     text-align: justify;
 }
+
+.texto-dorado-fuerte{
+  color: #A79159;
+}
+
+.texto-blanco{
+  color: #FFF;
+}
+
+.caja-dorada{
+    background-color: #CAB276;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.recuadro{
+    padding: 20px !important;
+}
+
+.color-header{
+    background: linear-gradient(white , black);
+}
+
+.cursiva{
+    text-decoration: italic;
+}
+
+.caja-gris{
+    background-color: #7b7b7b;
+}
+
+.caja-gris-clara{
+    background-color: #e9ecef;
+}
+
+.caja-dorada-opaca{
+    background-color: #e6d4aa;
+}
+
+.fizquierda{
+    float: left;
+}
+
+.fondo-paleta-1{
+    background-color: #CBBAA3;    
+}
+
+.fondo-paleta-2{
+    background-color: #DDD2C3;   
+}
+
+.fondo-paleta-3{
+    background-color: #F6F2EE;
+}
+
+.fondo-paleta-4{
+    background-color: #725533;
+    color: #F6F2EE;
+}
+
+.fondo-paleta-5{
+    background-color: #5C090A;
+    color: #FFF;
+}
+
+.fondo-paleta-6{
+    background-color: #f4cb89;
+
+}
+
+.fondo-paleta-7{
+    background-color: #7F6000;
+    color: #FFF;
+}
+
+.fondo-paleta-8{
+    background-color: #0E4866;
+    color: #FFF;
+}
+
+.seccion-foto-ms{
+    width: 100%;    
+}
+
+
+.dato-sua{
+    
+    color: #000;
+    background-color: #CAB276;
+    width: auto;
+    height: 110%;   
+    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+    border-radius: 5px;
+    font-weight:bold;
+    
+}
+
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

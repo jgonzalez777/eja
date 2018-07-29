@@ -1,15 +1,44 @@
 -index.html
+
+1. Imágenes que forman parte del slider principal de EJA pueden ser del campus de la facultad de Derecho, de CU o de murales o de Museos dentro del campus con el máximo pixelaje posible (para ocupar a tamaño completo)	
+
 	images/eja/home/f1.png
 	images/eja/home/f2.png
 	images/eja/home/f3.png
-        images/eja/home/f4.png
-        images/eja/home/f5.png
-        images/eja/home/f6.png
+    images/eja/home/f4.png
+    images/eja/home/f5.png
+    images/eja/home/f6.png
 
+2. Logo del sitio de EJA (hacer 3 logos por lo menos)
 	images/eja/logos/logo1.png
-	images/eja/logos/logo1-sin-letras.png
+	images/eja/logos/logo1-sin-letras.png (El puro logo de eja sin letras, para ocuparlo como icono de pestaña en el navegador)
+
+3. Íconos para la sección de Materiales, son iconos que identifican un maestro y maestra
 	images/eja/icons/maestra.png
 	images/eja/icons/maestro.png
+
+4. Interactivo Sitios de interés con vinculación a cada sitio
+
+https://www.scjn.gob.mx/
+https://www.unaminternacional.unam.mx/
+https://www.juridicas.unam.mx/
+http://museodelasconstituciones.unam.mx/nuevaweb/
+http://constitucion1917.gob.mx/
+https://cdhdf.org.mx/
+http://www.abogadogeneral.unam.mx/
+http://www.ddu.unam.mx/dduweb/
+https://www.derecho.unam.mx/cultura-juridica/trata-personas.pdf
+http://paideaderechounam.blogspot.com/
+https://www.derecho.unam.mx/cultura-juridica/g-tratados_onu.php
+https://www.derecho.unam.mx/revista/index.php
+https://www.derecho.unam.mx/oferta-educativa/licenciatura/distancia/#ius_radio
+http://www.cultura.unam.mx/index.aspx
+http://ww8.http.com/
+https://www.unaminternacional.unam.mx/
+http://www.iqom.com.mx/login/?option=unamderecho
+https://www.youtube.com/user/FacultadDerechoUnam
+
+
 
 
 
