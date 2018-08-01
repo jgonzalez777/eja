@@ -2038,6 +2038,10 @@ img.author-box-image {
         width: 20px;
         height: 20px;
     }
+
+    #logo-header-blanco{
+        width: 80%;
+    }
 }
 
 
@@ -2328,6 +2332,7 @@ img.author-box-image {
     #footer-wrapper {
         position: relative !important;
     }
+
 }
 
 .texto-azul{
