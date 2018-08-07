@@ -13,13 +13,8 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->           
+    <script type="text/javascript" src="js/formularios.js"></script>          
     <link rel="icon" type="image/png" href="images/eja/logos/logo1-sin-letras.png">
-    
-
     <script type="text/javascript">
     jQuery(document).ready(function($){
 	'use strict';
@@ -668,15 +663,15 @@
                                     
 	                                <div class="item">
 	                                    <blockquote>
-	                                        <div class="row">
-                                                <a href="" data-toggle="modal" data-target="#materiales-dra-rios" >
-    	                                            <div class="col-sm-3 text-center">
-    	                                                <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
-    	                                            </div>
-    	                                            <div class="col-sm-9">
-    	                                                <p style="color: #fff;">Dra. Alma de los Ángeles Ríos Ruíz</p>
-    	                                            </div>
-                                                </a>
+	                                        <div class="row">                                                
+	                                            <div class="col-sm-3 text-center">
+	                                                <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
+	                                            </div>
+	                                            <div class="col-sm-9">
+                                                    <a href="" data-toggle="modal" data-target="#materiales-dra-rios" >
+	                                                   <p style="color: #fff;">Dra. Alma de los Ángeles Ríos Ruíz</p>
+                                                   </a>
+	                                            </div>                                                
 	                                        </div>
 	                                    </blockquote>
 	                                </div>
@@ -697,15 +692,15 @@
                                     <!-- Quote 4-->
                                     <div class="item">
                                         <blockquote>
-                                            <div class="row">
-                                                <a href="" data-toggle="modal" data-target="#materiales-mtra-bobadilla">
-                                                    <div class="col-sm-3 text-center">
-                                                        <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
-                                                    </div>
-                                                    <div class="col-sm-9">
+                                            <div class="row">                                                
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <a href="" data-toggle="modal" data-target="#materiales-mtra-bobadilla">
                                                         <p style="color: #fff;">Mtra. Zaudisareth Bobadilla Castillo</p>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>                                                
                                             </div>
                                         </blockquote>
                                     </div>
@@ -725,15 +720,15 @@
                                     <!-- Quote 4-->
                                     <div class="item">
                                         <blockquote>
-                                            <div class="row">
-                                                <a href="" data-toggle="modal" data-target="#materiales-mtro-martinez">
-                                                    <div class="col-sm-3 text-center">
-                                                        <img class="img-responsive" src="images/eja/icons/maestro2.png" style="width: 100px;height:100px;">
-                                                    </div>
-                                                    <div class="col-sm-9">
+                                            <div class="row">                                                
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="images/eja/icons/maestro2.png" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <a href="" data-toggle="modal" data-target="#materiales-mtro-martinez">
                                                         <p style="color: #fff;">Mtro. Alejo Martínez Vendrell</p>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                </div>                                                
                                             </div>
                                         </blockquote>
                                     </div>
@@ -933,14 +928,18 @@
                     <div class="col-md-8 fade-up">
                         <div id="message"></div>
                         <div id="contactform">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
-                            <input type="text" name="aPaterno" id="aPaterno" placeholder="Apellido paterno" />
+                            <div class="alert alert-danger error-form" id="err-nombre">Por favor coloque su nombre</div>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre*" />
+                            <div class="alert alert-danger error-form" id="err-paterno">Por favor coloque su apellido paterno </div>                            
+                            <input type="text" name="aPaterno" id="aPaterno" placeholder="Apellido paterno*" />
                             <input type="text" name="aMaterno" id="aMaterno" placeholder="Apellido materno" />
-                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono local" />
-                            <input type="text" name="celular" id="celular" placeholder="Teléfono celular" />
-                            <input type="text" name="email" id="email" placeholder="Email" />                                
-                            <textarea name="mensaje-txt" id="mensaje-txt" placeholder="Mensaje" rows="5"></textarea>
-                            <center><input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Enviar" /></center>
+                            <div class="alert alert-danger error-form"  id="err-telefono">Por favor coloque por lo menos un teléfono de contacto (sólo números)</div>
+                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono*" />                                
+                            <input type="text" name="celular" id="celular" placeholder="Celular" />
+                            <div class="alert alert-danger error-form"  id="err-email">Por favor coloque su e-mail</div>
+                            <input type="text" name="email" id="email" placeholder="Email*" />                           
+                            <textarea name="mensaje-txt" id="mensaje-txt" placeholder="Mensaje" rows="5"></textarea>                            
+                            <button class="btn btn-outlined btn-primary" name="enviar" id="enviar" >Enviar</button>
                         </div>
                     </div><!-- col -->
                 </div><!-- row -->  

@@ -2493,3 +2493,9 @@ img.author-box-image {
    50% { opacity: 0.0; }
   100% { opacity: 1.0; }
 }
+
+.error-form{
+    display: none;
+    padding: 1px; 
+    margin: 1px;
+}
