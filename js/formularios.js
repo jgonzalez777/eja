@@ -49,7 +49,7 @@ $(document).ready(function(){
                 'telefono' : telefono,
                 'celular' : celular,
                 'email' : email,                
-                'mensaje' : mensaje,                
+                'mensaje' : mensaje                
             };
             
             $.ajax({
@@ -64,12 +64,7 @@ $(document).ready(function(){
                     $("#contactform").hide("slow");
                     $("#danger-form").hide("slow");
                     $("#calculo").show("slow");
-                    $("#titulo-formulario").hide("slow");
-                    window.piwikAsyncInit = function () {
-                        var et_tracker = Piwik.getTracker();
-                        et_tracker.setUserId(md5(email));                        
-                        et_tracker.trackGoal(1);
-                    }
+                    $("#titulo-formulario").hide("slow");                    
                 },
                 error: function(xhr, status){
                     $("#danger-form").show("slow");
