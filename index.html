@@ -13,13 +13,8 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery.js"></script>
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->           
+    <script type="text/javascript" src="js/formularios.js"></script>          
     <link rel="icon" type="image/png" href="images/eja/logos/logo1-sin-letras.png">
-    
-
     <script type="text/javascript">
     jQuery(document).ready(function($){
 	'use strict';
@@ -29,7 +24,11 @@
 	        "images/eja/home/f3.jpg",
             "images/eja/home/f4.jpg",
             "images/eja/home/f5.jpg",
-            "images/eja/home/f6.jpg"
+            "images/eja/home/f6.jpg",
+            "images/eja/home/f7.jpg",
+            "images/eja/home/f8.jpg",
+            "images/eja/home/f9.jpg",
+            "images/eja/home/f10.jpg"
 	    ], {duration: 5000, fade: 500, centeredY: true });
 
 		$("#mapwrapper").gMap({ controls: false,
@@ -72,7 +71,7 @@
                     <li><a href="#sitios-de-interes">Sitios</a></li>
                     <li><a href="#novedades">Novedades</a></li>
                     <li><a href="#videoteca">Videoteca</a></li>
-                    <li><a href="#">Revista Electrónica</a></li>                    
+                    <li><a href="#revista-electronica">Revista Electrónica</a></li>                    
                 </ul>
             </div>
         </div>
@@ -136,7 +135,7 @@
                 </div>
                <div class="gap"></div>
                 <div class="row fade-up">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Dra. Alma de los Ángeles Ríos Ruíz</p>
@@ -152,7 +151,43 @@
                                     </button>
                                 </div>
                             </blockquote>
-                        </div>                        
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-list-item">                        
+                            <blockquote>
+                                <p>Dr. Ruperto Patiño Manffer</p>
+                                <a href="mailto:rupertopat@enlacejuridicoacademico.com.mx"><small>rupertopat@enlacejuridicoacademico.com.mx</small></a>
+                                <small>Secretario Académico</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-dr-patinio">
+                                        Curriculum
+                                    </button>                                                                    
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-list-item">                        
+                            <blockquote>
+                                <p>Mtro. Alejo Martínez Vendrell</p>
+                                <a href="mailto:alejo.martinez@enlacejuridicoacademico.com.mx"><small>alejo.martinez@enlacejuridicoacademico.com.mx</small></a>
+                                <small>Secretario de Extensión</small>
+                                <br>
+                                <div id="caja" class="center">
+                                    <!--<button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-mtro-martinez">
+                                        Curriculum
+                                    </button>-->                                
+                                    <button type="button" class="btn btn-outline-info caja-dorada" data-toggle="modal" data-target="#publicaciones-mtro-martinez">
+                                        Publicaciones
+                                    </button>
+                                </div>
+                            </blockquote>
+                        </div>                                                                        
+                    </div>
+                    
+                        <!--
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Mtra. Guadalupe Ramírez Gaitan</p>
@@ -168,22 +203,7 @@
                                     </button>
                                 </div>
                             </blockquote>
-                        </div>
-                        <div class="testimonial-list-item">                        
-                            <blockquote>
-                                <p>Dr. Ruperto Patiño Manffer</p>
-                                <a href="mailto:rupertopat@enlacejuridicoacademico.com.mx"><small>rupertopat@enlacejuridicoacademico.com.mx</small></a>
-                                <small>Secretario Académico</small>
-                                <br>
-                                <div id="caja" class="center">
-                                    <button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-dr-patinio">
-                                        Curriculum
-                                    </button>                                                                    
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
+                        </div>-
                         <div class="testimonial-list-item">                        
                             <blockquote>
                                 <p>Mtra. Zaudisareth Bobadilla Castillo</p>
@@ -206,28 +226,11 @@
                                 <div id="caja" class="center">
                                     <!--<button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-dr-lopez">
                                         Curriculum
-                                    </button>-->   
+                                    </button>   
                                     <br>                                    
                                 </div>
                             </blockquote>
-                        </div>
-                        <div class="testimonial-list-item">                        
-                            <blockquote>
-                                <p>Mtro. Alejo Martínez Vendrell</p>
-                                <a href="mailto:alejo.martinez@enlacejuridicoacademico.com.mx"><small>alejo.martinez@enlacejuridicoacademico.com.mx</small></a>
-                                <small>Secretario de Extensión</small>
-                                <br>
-                                <div id="caja" class="center">
-                                    <!--<button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-mtro-martinez">
-                                        Curriculum
-                                    </button>-->                                
-                                    <button type="button" class="btn btn-outline-info caja-dorada" data-toggle="modal" data-target="#publicaciones-mtro-martinez">
-                                        Publicaciones
-                                    </button>
-                                </div>
-                            </blockquote>
-                        </div>
-                    </div>
+                        </div>-->                                            
                 </div>
 
                 <div class="gap"></div>
@@ -237,20 +240,6 @@
                 </div> 
                 <div class="gap"></div>
                 <div id="meet-the-team" class="row">
-                    <div class="col-md-3 col-xs-12">
-                        <div class="center team-member">
-                            <div class="team-content fade-up">
-                                <h5>Mtra. Guadalupe Ramírez Gaitan</h5>
-                                <p>Grupo fundador</p>
-                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#curr-mtra-ramirez">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#publicaciones-mtra-ramirez">
-                                    <i class="fa fa-user"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
                             <div class="team-content fade-up">
@@ -264,7 +253,49 @@
                                 </a>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Dr. Ruperto Patiño Manffer</h5>
+                                <p>Secretario Académico</p>
+                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#curr-dr-patinio">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="#grupo">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtro. Alejo Martínez Vendrell</h5>
+                                <p>Secretario de Extensión</p>
+                                <a class="btn btn-social btn-facebook" href="#grupo">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#publicaciones-mtro-martinez">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                 
+                    <div class="col-md-3 col-xs-12">
+                        <div class="center team-member">
+                            <div class="team-content fade-up">
+                                <h5>Mtra. Guadalupe Ramírez Gaitan</h5>
+                                <p>Grupo fundador</p>
+                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#curr-mtra-ramirez">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#publicaciones-mtra-ramirez">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                     
                     <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
                             <div class="team-content fade-up">
@@ -292,21 +323,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div> 
-                    <div class="col-md-3 col-xs-12">
-                        <div class="center team-member">
-                            <div class="team-content fade-up">
-                                <h5>Dr. Ruperto Patiño Manffer</h5>
-                                <p>Secretario Académico</p>
-                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#curr-dr-patinio">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-social btn-facebook" href="#grupo">
-                                    <i class="fa fa-user"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>                           
+                    </div>                                                
                     <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
                             <div class="team-content fade-up">
@@ -320,21 +337,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>   
-                    <div class="col-md-3 col-xs-12">
-                        <div class="center team-member">
-                            <div class="team-content fade-up">
-                                <h5>Mtro. Alejo Martínez Vendrell</h5>
-                                <p>Secretario de Extensión</p>
-                                <a class="btn btn-social btn-facebook" href="#grupo">
-                                    <i class="fa fa-eye"></i>
-                                </a>
-                                <a class="btn btn-social btn-facebook" href="" data-toggle="modal" data-target="#publicaciones-mtro-martinez">
-                                    <i class="fa fa-user"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>                 
+                    </div>                       
                     <div class="col-md-3 col-xs-12">
                         <div class="center team-member">
                             <div class="team-content fade-up">
@@ -421,7 +424,7 @@
             GALERÍA
             #######
         -->
-        <section id="galeria" class="divider-section">
+        <section id="galeria" class="">
             <div class="container">
                 <div class="gap"></div> 
                 <div class="center gap fade-down section-heading">
@@ -432,8 +435,9 @@
                 <div class="col-md-4 col-xs-12">
                     <div class="portfolio-item apps isotope-item">
                         <div class="item-inner center">
-                            <img src="images/eja/galeria-portal/1.jpg" alt="" style="width: 96%;">
+                            <img src="images/eja/galeria-portal/1.png" alt="" style="width: 100%;">
                             <h5 class="texto-dorado">Presentación de Libro<br><small>Comercio Exterior y <br>los Derechos Humanos</small></h5>
+                            <br>
                             <div class="overlay">
                                 <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
                             </div>           
@@ -466,8 +470,7 @@
                     <div class="portfolio-item apps isotope-item">
                         <div class="item-inner center">
                             <img src="images/eja/galeria-portal/4.png" alt="" style="width: 46%;">
-                            <h5 class="texto-dorado">Conferencia<br><small>"Relación Bilateral <br>México - Estados Unidos de América,<br> en el Marco del Libre Comercio"
-                            </small></h5>
+                            <h5 class="texto-dorado">Conferencia<br><small>"Seminario "El escenario migratorio<br> en la relación México - Estados<br> Unidos de América"</small>   </h5>
                             <div class="overlay">
                                 <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
                             </div>           
@@ -477,7 +480,7 @@
                 <div class="col-md-4 col-xs-12">
                     <div class="portfolio-item apps isotope-item">
                         <div class="item-inner center">
-                            <img src="images/eja/galeria-portal/5.png" alt="" style="width: 53%;">
+                            <img src="images/eja/galeria-portal/5.png" alt="" style="width: 50%;">
                             <h5 class="texto-dorado">Conferencia<br><small>"Equidad de Género, <br>en el marco Internacional<br> del Día de la Mujer"
                             </small></h5>
                             <div class="overlay">
@@ -489,7 +492,7 @@
                 <div class="col-md-4 col-xs-12">
                     <div class="portfolio-item apps isotope-item">
                         <div class="item-inner center">
-                            <img src="images/eja/galeria-portal/6.png" alt="" style="width: 59%;">
+                            <img src="images/eja/galeria-portal/6.png" alt="" style="width: 61%;">
                             <h5 class="texto-dorado">Conferencia<br><small>"Defensa de los Particulares<br> ante las Entidades Financieras"</small></h5>
                             <div class="overlay">
                                 <a class="preview btn btn-outlined btn-primary" href="#" rel="prettyPhoto"><i class="fa fa-eye"></i></a>             
@@ -533,8 +536,8 @@
                                 <i class="fa fa-book fa fa-md"></i>
                             </div>
                             <div class="media-body fade-up">
-                                <h3 class="media-heading">Presentación de Libro</h3>
-                                <p>"El Derecho Humano a la Salud frente a la Responsabilidad Médico-Legal: UNA VISIÓN COMPARADA"</p>
+                                <h3 class="media-heading">Presentación de libro</h3>
+                                <p>"El Derecho Humano a la Salud frente a la Responsabilidad Médico-Legal: Una Visión Comparada"</p>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-1">
                                     ver detalles
                                 </button>
@@ -548,7 +551,7 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Conferencia</h3>
-                                <p>"COMERCIO EXTERIOR Y LOS DERECHOS HUMANOS"</p>    
+                                <p>"Comercio Exterior y los Derechos Humanos"</p>    
                                 <br>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-2">
                                     ver detalles
@@ -563,7 +566,7 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Seminario</h3>
-                                <p>"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</p>
+                                <p>"El Escenario Migratorio en la Relación México- Estados Unidos de América"</p>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-3">
                                     ver detalles
                                 </button>
@@ -580,7 +583,7 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Seminario</h3>
-                                <p>"EL ESCENARIO MIGRATORIO EN LA RELACIÓN MÉXICO - ESTADOS UNIDOS DE AMÉRICA"</p>
+                                <p>"El Escenario Migratorio en la Relación México- Estados Unidos de América"</p>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-4">
                                     ver detalles
                                 </button>
@@ -594,7 +597,7 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Seminario</h3>
-                                <p>RELACIÓN BILATERAL MÉXICO - ESTADOS UNIDOS DE AMÉRICA, EN EL MARCO DEL LIBRE COMERCIO</p>
+                                <p>Relación Bilateral México - Estados Unidos de América, en el MArco de Libre Comercio</p>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-5">
                                     ver detalles
                                 </button>
@@ -608,99 +611,21 @@
                             </div>
                             <div class="media-body fade-up">
                                 <h3 class="media-heading">Seminario</h3>
-                                <p><small>RELACIÓN COMERCIAL MÉXICO - ESTADOS UNIDOS DE AMÉRICA, EN EL MARCO DE LA PRESIDENCIA DE DONALD TRUMP</small></p>
+                                <p><small>Relación Comercial México - Estados Unidos de América, en el Marco de la Presidencia de Donald Trump</small></p>
                                 <button type="button" class="btn btn-primary caja-azul" data-toggle="modal" data-target="#act-mod-6">
                                     ver detalles
                                 </button>
                             </div>
+                            <br>  
+            <br>
+            <br> 
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.row-->
             </div>
+            <br>  
             <br>
-            <div class="center gap fade-down section-heading">
-                <button type="button" class="btn btn-outline-info caja-dorada">Conóce todas las actividades</button>
-            </div>
-            <!--<div class="gap"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Our Skills</h2>
-                            <hr>
-                            <p>Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-                        </div>               
-                    </div>
-                </div>
-            </div>
-            <div class="container">     
-            <div class="row">            
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-red bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Video Editing</h3>
-	                            <span>Our cutting room floor is messy.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="65.5%" style="width: 65.5%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">65.5</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-cyan bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Marketing</h3>
-	                            <span>How well we can sell you and your brand.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="98.5%" style="width: 98.5%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">98.5</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-primary bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Web Development</h3>
-	                            <span>We love servers and stuff.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="90%" style="width: 90%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">90</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-md-3">
-	                    <div class="tile-progress tile-pink bounce-in">
-	                        <div class="tile-header">
-	                            <h3>Coffee</h3>
-	                            <span>We done make good joe, though.</span>
-	                        </div>
-	                        <div class="tile-progressbar">
-	                            <span data-fill="10%" style="width: 10%;"></span>
-	                        </div>
-	                        <div class="tile-footer">
-	                            <h4>
-	                                <span class="pct-counter counter">10</span>%
-	                            </h4>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div><!--/.row-->
-
+            <br>          
 	        <div class="gap"></div>        	
         </section>
 
@@ -730,6 +655,22 @@
 	                            <!-- Carousel Slides / Quotes -->
 	                            <div class="carousel-inner">                                
 	                              <!-- Quote 1 -->
+
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">                                                
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <a href="" data-toggle="modal" data-target="#materiales-dra-rios" >
+                                                       <p style="color: #fff;">Dra. Alma de los Ángeles Ríos Ruíz</p>
+                                                   </a>
+                                                </div>                                                
+                                            </div>
+                                        </blockquote>
+                                    </div>
+
 	                                <div class="item active">
 	                                    <blockquote>
 	                                        <div class="row">
@@ -743,41 +684,34 @@
 	                                    </blockquote>
 	                                </div>
 	                                <!-- Quote 2 -->
-	                                <div class="item">
-	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-3 text-center">
-	                                                <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
-	                                            </div>
-	                                            <div class="col-sm-9">
-	                                                <p>Dra. Alma de los Ángeles Ríos Ruíz</p>
-	                                            </div>
-	                                        </div>
-	                                    </blockquote>
-	                                </div>
+                                    
+	                                
+                                    
 	                                <!-- Quote 3 -->
 	                                <div class="item">
 	                                    <blockquote>
-	                                        <div class="row">
-	                                            <div class="col-sm-3 text-center">
-	                                                <img class="img-responsive" src="images/eja/icons/maestro2.png" style="width: 100px;height:100px;">
-	                                            </div>
-	                                            <div class="col-sm-9">
-	                                                <p>Dr. José Luis López Chavarría</p>
-	                                            </div>
+	                                        <div class="row">                                                
+                                                <div class="col-sm-3 text-center">
+                                                    <img class="img-responsive" src="images/eja/icons/maestro2.png" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <p>Dr. José Luis López Chavarría</p>
+                                                </div>                                                
 	                                        </div>
 	                                    </blockquote>
 	                                </div>
                                     <!-- Quote 4-->
                                     <div class="item">
                                         <blockquote>
-                                            <div class="row">
+                                            <div class="row">                                                
                                                 <div class="col-sm-3 text-center">
                                                     <img class="img-responsive" src="images/eja/icons/maestra2.png" style="width: 100px;height:100px;">
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p>Mtra. Zaudisareth Bobadilla Castillo</p>
-                                                </div>
+                                                    <a href="" data-toggle="modal" data-target="#materiales-mtra-bobadilla">
+                                                        <p style="color: #fff;">Mtra. Zaudisareth Bobadilla Castillo</p>
+                                                    </a>
+                                                </div>                                                
                                             </div>
                                         </blockquote>
                                     </div>
@@ -797,13 +731,15 @@
                                     <!-- Quote 4-->
                                     <div class="item">
                                         <blockquote>
-                                            <div class="row">
+                                            <div class="row">                                                
                                                 <div class="col-sm-3 text-center">
                                                     <img class="img-responsive" src="images/eja/icons/maestro2.png" style="width: 100px;height:100px;">
                                                 </div>
                                                 <div class="col-sm-9">
-                                                    <p>Mtro. Alejo Martínez Vendrell</p>
-                                                </div>
+                                                    <a href="" data-toggle="modal" data-target="#materiales-mtro-martinez">
+                                                        <p style="color: #fff;">Mtro. Alejo Martínez Vendrell</p>
+                                                    </a>
+                                                </div>                                                
                                             </div>
                                         </blockquote>
                                     </div>
@@ -814,156 +750,116 @@
                     <br>
                     <br>
                     <br>
+                     <br>
+                    <br>
+                    <br>
 	                <div class="gap"></div>
 	      		</div>
       		</section>
 
 
-            <!--########SITIOS DE INTERES-->
-            <section id="sitios-de-interes" class="divider-section">                    
-                <div class="row">       
-                    <div class="col-md-12 col-xs-12 flip-in">
-                        <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 120px; height: 120px;"/><div id="5b4f4cdad94ec11008ebf9ae" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>                            
-                    </div><!--/.col-md-3-->                                                     
-                
-       		</section>
+        <!--########SITIOS DE INTERES-->
+        <section id="sitios-de-interes" class="divider-section">                    
+            <div class="row">       
+                <div class="col-md-12 col-xs-12 flip-in">
+                    <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 120px; height: 120px;"/><div id="5b4f4cdad94ec11008ebf9ae" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>                            
+                </div><!--/.col-md-3-->                                                     
+            
+   		</section>
 
-            <section id="novedades" class="white">
-                <div class="container">
-                    <div class="center gap fade-down section-heading">
-                        <br>
-                        <h2 class="main-title texto-azul">Novedades jurídicas y legislativas</h2>
-                    </div>  
-                    <div class="gap"></div>
-                    <div id="pricing-table" class="row">
-                        <div class="col-md-4 col-xs-12 flip-in">
-                            <ul class="plan plan1">
-                                <li class="plan-name">
-                                    <h3>Colegiación del Jurísta en el Entorno del Siglo XXI </h3>
-                                </li>                               
-                                <li style="font-weight: bold;">
-                                    Dra. Alma de los angeles
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Rios
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Ruiz
-                                </li>                                
-                                <li class="plan-action">
-                                    <a href="docs/colegiacion_abogados.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
-                                </li>
-                            </ul>
-                        </div><!--/.col-md-3-->
-                        <div class="col-md-4 col-xs-12 flip-in">
-                            <ul class="plan plan2 featured" style="background-color: #091f92;">
-                                <li class="plan-name">
-                                    <h3>Ley General de Transparencia y Acceso a la Información Pública </h3>
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Dra. Alma de los angeles
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Rios
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Ruiz
-                                </li>     
-                                <li class="plan-action">
-                                    <a href="docs/ley_trasparencia.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md">Descargar</a>
-                                </li>
-                            </ul>
-                        </div><!--/.col-md-3-->
-                        <div class="col-md-4 col-xs-12 flip-in">
-                            <ul class="plan plan3">
-                                <li class="plan-name">
-                                    <h3>Avatares de la Reforma Política Capitalina</h3>
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Dr. José Luis 
-                                </li>
-                                <li style="font-weight: bold;">
-                                    López
-                                </li>
-                                <li style="font-weight: bold;">
-                                    Chavarría
-                                </li>     
-                                <li class="plan-action">
-                                    <a href="docs/avatares_reforma_politica.pdf" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
-                                </li>
-                            </ul>
-                        </div><!--/.col-md-3-->                        
-                    </div>
-                    <div class="gap"></div> 
+        <section id="novedades" class="white">
+            <div class="container">
+                <div class="center gap fade-down section-heading">
+                    <br>
+                    <h2 class="main-title texto-azul">Novedades jurídicas y legislativas</h2>
+                </div>  
+                <div class="gap"></div>
+                <div id="pricing-table" class="row">
+                    <div class="col-md-4 col-xs-12 flip-in">
+                        <ul class="plan plan1">
+                            <li class="plan-name">
+                                <h3>Colegiación del Jurísta en el Entorno del Siglo XXI </h3>
+                            </li>                               
+                            <li style="font-weight: bold;">
+                                Dra. Alma de los angeles
+                            </li>
+                            <li style="font-weight: bold;">
+                                Rios
+                            </li>
+                            <li style="font-weight: bold;">
+                                Ruiz
+                            </li>                                
+                            <li class="plan-action">
+                                <a href="docs/colegiacion_abogados.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
+                            </li>
+                        </ul>
+                    </div><!--/.col-md-3-->
+                    <div class="col-md-4 col-xs-12 flip-in">
+                        <ul class="plan plan2 featured" style="background-color: #091f92;">
+                            <li class="plan-name">
+                                <h3>Ley General de Transparencia y Acceso a la Información Pública </h3>
+                            </li>
+                            <li style="font-weight: bold;">
+                                Dra. Alma de los angeles
+                            </li>
+                            <li style="font-weight: bold;">
+                                Rios
+                            </li>
+                            <li style="font-weight: bold;">
+                                Ruiz
+                            </li>     
+                            <li class="plan-action">
+                                <a href="docs/ley_transparencia.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md">Descargar</a>
+                            </li>
+                        </ul>
+                    </div><!--/.col-md-3-->
+                    <div class="col-md-4 col-xs-12 flip-in">
+                        <ul class="plan plan3">
+                            <li class="plan-name">
+                                <h3>Avatares de la Reforma Política Capitalina</h3>
+                            </li>
+                            <li style="font-weight: bold;">
+                                Dr. José Luis 
+                            </li>
+                            <li style="font-weight: bold;">
+                                López
+                            </li>
+                            <li style="font-weight: bold;">
+                                Chavarría
+                            </li>     
+                            <li class="plan-action">
+                                <a href="docs/avatares_reforma_politica.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
+                            </li>
+                        </ul>
+                    </div><!--/.col-md-3-->                        
                 </div>
-            </section>
+                <div class="gap"></div> 
+            </div>
+        </section>
 
             <!--
             #########
             INICIO VIDEOTECA
             #########
         -->
-        <section id="videoteca" class="caja-dorada">
-            <div class="container">
-            <div class="gap"></div> 
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="center gap fade-down section-heading">
-                            <h2 class="main-title">Videoteca</h2>
-                        </div>                
-                    </div>
+        <section id="videoteca" class="">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 flip-in">
+                    <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 120px; height: 120px;"/><div id="5b69b22ce420a46d88ad707c" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%" src="https://www.youtube.com/embed/4UxoLlo1aMI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">El derecho humano a la salud frente a la responsabilidad Médico - Legal: Una visión comparada<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%" src="https://www.youtube.com/embed/n9a_5sJUVb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">Clase de Sistemas Jurídicos<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%"  src="https://www.youtube.com/embed/D0ZNBipvFlg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">Comercio Exterior y los Derechos Humanos<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%" src="https://www.youtube.com/embed/RwcwSGsqteY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">Seminario "El escenario migratorio en la relación México - Estados Unidos de América"<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%" src="https://www.youtube.com/embed/ytjTnFSr0Uk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">Seminario "El escenario migratorio en la relación México - Estados Unidos de América"<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-                    <div class="col-md-4 col-sm-12">
-                        <div class="service-block">
-                            <iframe width="100%" src="https://www.youtube.com/embed/bMogSL6wN_0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <p class="negritas centrado">Relación Bilateral México - Estados Unidos de América, en el Marco del Libre Comercio<br><small>by Enlace Jurídico Académico</small></p>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-
-                </div><!--/.row-->
             </div>
-            <br>
-            <div class="center gap fade-down section-heading">
-                <button type="button" class="btn btn-outline-info caja-azul">Conóce todas los videos</button>
-            </div>
-            <div class="gap"></div>         
         </section>
+
+
+        <!--########SITIOS DE INTERES-->
+        <section id="revista-electronica" class="">                    
+            <div class="row">       
+                <div class="col-md-12 col-xs-12 flip-in">
+                    <div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"><img src="https://genially.blob.core.windows.net/genially/version3.0/loader.gif" class="loader-genially" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; z-index: 1;width: 120px; height: 120px;"/><div id="5b61f47a088c650ee537d114" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"></div></div><script>(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));</script>                           
+                </div><!--/.col-md-3-->                                                     
+            
+        </section>
+        
 
 		<div id="mapwrapper">
 			<div id="map"></div>
@@ -988,15 +884,21 @@
                 
                     <div class="col-md-8 fade-up">
                         <div id="message"></div>
+                        <div class="alert alert-success" style="display: none;" id="success-form">La información ha sido enviada correctamente, en menos de 24 hrs. tendrá respuesta a su petición, ¡Gracias!</div>
+                        <div class="alert alert-danger error-form" id="danger-form">Ha ocurrido un problema, verifique sus datos por favor.</div>
                         <div id="contactform">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
-                            <input type="text" name="aPaterno" id="aPaterno" placeholder="Apellido paterno" />
+                            <div class="alert alert-danger error-form" id="err-nombre">Por favor coloque su nombre</div>
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombre*" />
+                            <div class="alert alert-danger error-form" id="err-paterno">Por favor coloque su apellido paterno </div>                            
+                            <input type="text" name="aPaterno" id="aPaterno" placeholder="Apellido paterno*" />
                             <input type="text" name="aMaterno" id="aMaterno" placeholder="Apellido materno" />
-                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono local" />
-                            <input type="text" name="celular" id="celular" placeholder="Teléfono celular" />
-                            <input type="text" name="email" id="email" placeholder="Email" />                                
-                            <textarea name="mensaje-txt" id="mensaje-txt" placeholder="Mensaje" rows="5"></textarea>
-                            <center><input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Enviar" /></center>
+                            <div class="alert alert-danger error-form"  id="err-telefono">Por favor coloque por lo menos un teléfono de contacto (sólo números)</div>
+                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono*" />                                
+                            <input type="text" name="celular" id="celular" placeholder="Celular" />
+                            <div class="alert alert-danger error-form"  id="err-email">Por favor coloque su e-mail</div>
+                            <input type="text" name="email" id="email" placeholder="Email*" />                           
+                            <textarea name="mensaje-txt" id="mensaje-txt" placeholder="Mensaje" rows="5"></textarea>                            
+                            <button class="btn btn-outlined btn-primary" name="enviar" id="enviar" >Enviar</button>
                         </div>
                     </div><!-- col -->
                 </div><!-- row -->  
@@ -1009,56 +911,11 @@
         <section id="bottom" class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 about-us-widget">
-                        <h4>Global Coverage</h4>
-                        <p>Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin.</p>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Company</h4>
-                        <div>
-                            <ul class="arrow">
-                                <li><a href="#">Company Overview</a></li>
-                                <li><a href="#">Meet The Team</a></li>
-                                <li><a href="#">Our Awesome Partners</a></li>
-                                <li><a href="#">Our Services</a></li>
-                            </ul>
-                        </div>
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Latest Articles</h4>
-                        <div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <img class="widget-img" src="images/portfolio/folio01.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <span class="media-heading"><a href="#">Blog Post A</a></span>
-                                    <small class="muted">Posted 14 April 2014</small>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <img class="widget-img" src="images/portfolio/folio02.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <span class="media-heading"><a href="#">Blog Post B</a></span>
-                                    <small class="muted">Posted 14 April 2014</small>
-                                </div>
-                            </div>
-                        </div>  
-                    </div><!--/.col-md-3-->
-
-                    <div class="col-md-3 col-sm-6">
-                        <h4>Come See Us</h4>
-                        <address>
-                            <strong>Ace Towers</strong><br>
-                            New York Ave,<br>
-                            New York, 215648<br>
-                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 546 840654 05
-                        </address>
-                    </div> <!--/.col-md-3-->
+                    <div class="col-md-12 col-sm-12">
+                        <center>
+                            <img src="images/eja/logos/logo1-sin-letras.png">
+                        </center>
+                    </div>
                 </div>
             </div>
         </section><!--/#bottom-->
@@ -1067,7 +924,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        &copy; 2014 <a target="_blank" href="http://www.distinctivethemes.com" title="Premium Themes and Templates">Distinctive Themes</a>. All Rights Reserved.
+                        &copy; 2018 Enlace Jurídico Académico. Todos los derechos reservados.
                     </div>
                     <div class="col-sm-6">
                         <ul class="pull-right">
@@ -1305,6 +1162,7 @@
                 <div class="modal-body">
                     <iframe src="https://h5p.org/h5p/embed/285614" width="1090" height="252" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>                                      
                 </div>
+                <a href="docs/curriculum-completo.pdf" target="_blank"><h4 class="texto-dorado">&nbsp;Ver curriculum completo</h4></a>            
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
@@ -1454,6 +1312,27 @@
                 </div>
                 <div class="modal-body">                    
                     <ol>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/1.pdf" target="_blank">El libre comercio a la luz de los derechos humanos</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/2.pdf" target="_blank">Actualización o Renegociación Tlcan</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/3.pdf" target="_blank">Direccionar la Inductria Automotriz</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/4.pdf" target="_blank">Ejercicio Medicina y Entorno Legal</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/5.pdf" target="_blank">El Derecho a la Libertad de Expresión</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/6.pdf" target="_blank">El Derecho Humano a la Salud</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/7.pdf" target="_blank">EUA vs China</a></li>
+
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/8EUTANASIA_Y_LA_DIGNIDAD_HUMANA.pdf" target="_blank">Eutanasia y la Dignidad Humana</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/9LA_JUSTICIA_ELECTRONICA_EN_MEXICO.pdf" target="_blank">La Justicia Electrónica en México</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/10MEDICINA_LEGAL_NECESIDAD_IMPERATIVA_MEX_EUA.pdf" target="_blank">Medicina Legal Necesidad Imperativa Mex EUA</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/11Mexico_no_esta_aislado.pdf" target="_blank">México no está aislado.pdf</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/12MIGRACIONY_REPATRIADOS.pdf" target="_blank">Migración y Repatriados</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/13Nuevo_proteccionismo_estadounidense.pdf" target="_blank">Nuevo Proteccionismo Estadounidense</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/14PERSPECTIVAS_COMERCIALES.pdf" target="_blank">Perspectivas Comerciales</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/15RECUENTO_DE_LAS_RONDAS.pdf" target="_blank">Recuento de las Rondas</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/16SEPTIMA_RONDA_DE_RENEGOCIACIÓN.pdf" target="_blank">Séptima Ronda de Renegociación</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/17SEXTA_RONDA.pdf" target="_blank">Sexta Ronda.pdf</a></li>
+                        <li class="butt"><a href="docs/publicaciones/dra_rios/actualizado/18TLCAN_BALANCE_GENERAL.pdf" target="_blank">TLCAN Balance General</a></li>
+
+
                         <li class="butt" ><a href="docs/publicaciones/dra_rios/MEDICINA_LEGAL_NECESIDAD_IMPERATIVA_MEX_EUA.pdf" target="_blank">Medicina Legal una Necesidad Imperativa en México y Estados Unidos de América</a></li>
                         <li class="butt" ><a href="docs/publicaciones/dra_rios/6_ronda_negociacionesTLC.pdf" target="_blank">TLCAN: 6a. ronda de renegociaciones</a></li>   
                         <li class="butt" ><a href="docs/publicaciones/dra_rios/reflexion_libre_comercio.pdf" target="_blank">Reflexión en torno al libre comercio y los derechos humanos</a></li>   
@@ -1550,6 +1429,491 @@
             </div>
         </div>
     </div>
+
+
+
+    <!--M A T E R I A L E S -->
+    <div class="modal fade" id="materiales-dra-rios" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title texto-dorado centrado" id="exampleModalLabel">Materiales Dra. Alma de los Ángeles Rios Ruíz</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="texto-azul">Modernidad Tecnológica, Concentración del Ingreso y Empleo</h3>
+                    <ul>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/25SeverConflictoEmpleo_yModernizacTecnológc2.pdf' target="blank">25 Severo Conflicto Entre Empleo y Modernización Tecnológca</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/26ConcentracIngresoCrecienteObstaculovsDesarrollo.pdf' target="blank">26 La concentración del ingreso: creciente obstáculo contra el desarrollo</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/27Nuestroacaudalado1seEstáObstaculizandoSuCrecimnto2.pdf' target="blank">27 Nuestro más acaudalado 1% se está obstaculizando su propio crecimiento</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/28DeslumbranteAvanceHumanidad yLadoNegativo2.pdf' target="blank">28 El deslumbrante avance de la humanidad trajo también sus lados negativos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/44Crucial importancCrecimntoEconóm.pdf' target="blank">44 La crucial importancia del crecimiento económico</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/55LastreNuestraFaltaD productividad2.pdf' target="blank">55 El lastre de nuestra falta de productividad</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/58ModernizacyProgresoAgudizanProblemsDempleo2.pdf' target="blank">58 Modernización y progreso agudizan los problemas de empleo</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/98MundoDeAbundancyArmoníaPreveíaKeynes2030.pdf' target="blank">98 El mundo de abundancia y armonía que preveía Keynes para el 2030 (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/99MundoDeAbundancyArmoníaPreveíaKeynes2030.pdf' target="blank">99 El mundo de abundancia y armonía que preveía Keynes para el 2030 (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/100PorquePredicKeynesnohaCristalizado.pdf' target="blank">100 ¿Por qué la visionaria predicción de Keynes no se ha plasmado en nuestra realidad?</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/129TorridoDebateSobreTPPoAsociacTransPacifico2.pdf' target="blank">129 El tórrido debate en torno al TPP o Acuerdo de Asociación Transpacífico (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/138PikettyTendenciaaConcentracIngreso2.pdf' target="blank">138 Piketty expone la brutal tendencia a la concentración del ingreso</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/148CrecienteIndignacMundialvsStatuQuoPrevalecnte.pdf' target="blank">148 Creciente indignación mundial contra el statu quo prevaleciente</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/155GranDesafioEnfrentanNuevasGeneraciones.pdf' target="blank">155 El gran desafío que enfrentan las nuevas generaciones</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/156GranDesafioEnfrentanNuevasGeneracionesII2.pdf' target="blank">156 El gran desafío que enfrentan las nuevas generaciones II</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/158ExigenciaDeCompetitividimpulsaIntensivaCpitalizacI2.pdf' target="blank">158 Exigencia de competitividad internacional impulsa intensiva capitalización (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/159ExigenciaDeCompetitividimpulsaIntensivaCapitalizacII.pdf' target="blank">159 Exigencia de competitividad internacional impulsa intensiva capitalización (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/163PosiblesCausasMalhumorSocialprevalecienteI.pdf' target="blank">163 Posibles causas del “Mal humor social” prevaleciente (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/167AdversidadesVuelvenMásDificilPonerOrden2.pdf' target="blank">167 Adversidades que vuelven todavía más difícil poner en orden a México</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/170ProgresoTecnicoFactorDeIntegracoDeConflictoSocial.pdf' target="blank">170 El progreso técnico ¿factor de integración o de conflicto social?</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/176EconomiaMundialTopaNoFuncionaEstrategiaKeynesiana2.pdf' target="blank">176 La economía mundial se topa con que ya no nos está funcionando la estrategia keynesiana</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/179ConcentracIngresoExplicaFracasoEstrategiaKeynes.pdf' target="blank">179 Concentración del ingreso: hipótesis explicativa del fracaso de la estrategia keynesiana</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/187InnovacionesTecnologicasDesplazanFTrabajo2.pdf' target="blank">187 Innovaciones tecnológicas provocan desplazamiento del factor trabajo</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/201DestruccionDeEmpresasPerdiendoSuCreatividad2.pdf' target="blank">201 La destrucción de empresas está perdiendo su creatividad</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/211CrecienteDivorcioEntreGobiernosySociedades2.pdf' target="blank">211 Creciente divorcio entre gobiernos y sociedades</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/243DeterioroMundialdeConfianzaEnGobiernos2.pdf' target="blank">243 Deterioro mundial de la confianza en los gobiernos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/263EmpresasConFuturoCrecenConMenorPersonal2.pdf' target="blank">263 Empresas con futuro crecen con menos personal</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/JorBC7GranDesafioDiseniarFormulaDistribucRiqueza2.pdf' target="blank">JorBC7 El gran desafío de diseñar la mejor fórmula para redistribuir la riqueza</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/JorBC9AugeTecnologicoTrastornosEmpleoyDisminucIngresos2.pdf' target="blank">JorBC9 Auge tecnológico trae trastornos en el empleo y disminución de ingresos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/JorBC10TransitoSociedaIndustrialaPostindustrialConocimnto(2).pdf' target="blank">JorBC10 El tránsito de la sociedad industrial a la postindustrial o del conocimiento</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/JorBC13ConcentracIngresoFactorDesestabilizacionSocial2.pdf' target="blank">JorBC13 Concentración del ingreso: factor de desestabilización social</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/1mod_tec/JorBC20GenialesAlgoritmosAmenazanHumanidad2.pdf' target="blank">JorBC20 Geniales algoritmos amenazan a la humanidad</a></li>
+                    </ul>
+
+                    <h3 class="texto-azul">Teoría Política</h3>
+                    <ul>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/23MexAnteUnaDefinitoriaEncrucijada2.pdf' target="blank">23 México ante una definitoria encrucijada</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/45IzquierdavsDerechaperoConciliables2.pdf' target="blank">45 Izquierda vs Derecha ¿Son irreconciliables? I</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/46IzquierdavsDerechaperoConciliables.pdf' target="blank">46 Izquierda vs Derecha ¿Son irreconciliables? II</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/48DecadenciaPartidosTraegravesriesgos2.pdf' target="blank">48 Decadencia de nuestros partidos trae graves riesgos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/51SocialdemocracHaLogradoCombinarIzqyDrcha2.pdf' target="blank">51 Socialdemocracia: ha logrado combinar armónicamente los valores de izquierda y derecha</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/60NuestrosPartidosCachaTodoLacraqNosAfecta2.pdf' target="blank">60 Nuestros distorsionados partidos cacha-todo, una lacra que nos afecta</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/110OpuestasCorrientsPensamntoEsclarecenFuncCoercion2.pdf' target="blank">110 Dos opuestas corrientes de pensamiento esclarecen la crucial función de la coerción</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/170ProgresoTecnicoFactorDeIntegracoDeConflictoSocial.pdf' target="blank">170 El progreso técnico ¿factor de integración o de conflicto social?</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/171UsoFuerzaPublicaVistaPorEstudiososPolitica2.pdf' target="blank">171 Uso de la fuerza pública vista por estudiosos de la política (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/172UsoFuerzaPublicaVistaPorEstudiososPoliticaII.pdf' target="blank">172 Uso de la fuerza pública vista por estudiosos de la política (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/173UsoFuerzaPublicaVistaPorEstudiososPoliticaIII.pdf' target="blank">173 Uso de la fuerza pública vista por estudiosos de la política (III)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/189CrecienteDisfuncionalidyDesconfianzaPartidosP2.pdf' target="blank">189 Creciente disfuncionalidad y desconfianza en los partidos políticos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/190HipotesisExplicativaDivorcioSociedadyPartidos2.pdf' target="blank">190 Hipótesis explicativa sobre el creciente divorcio entre sociedad y partidos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/198DisfuncionalevolucionDeLosPartidos2.pdf' target="blank">198 Disfuncional evolución de los partidos</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/211CrecienteDivorcioEntreGobiernosySociedades2.pdf' target="blank">211 Creciente divorcio entre gobiernos y sociedades</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/224Porquefracasanlospaises2.pdf' target="blank">224 Por qué fracasan los países (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/225PorquefracasanlospaisesII.pdf' target="blank">225 Por qué fracasan los países (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/237AlemaniaExitosaEnEconomiaConDificultadesPoliticas2.pdf' target="blank">237 Alemania: exitosa en economía, con dificultades políticas</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/2teor_poli/257ExcesoDeRepresentacProporcional.pdf' target="blank">257 Exceso de representación proporcional</a></li>                        
+                    </ul>
+                    <h3 class="texto-azul">Populismo</h3>
+                    <ul>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/1HugoChavezGranForjadorLealtadsDestructorCapacids2.pdf' target="blank">1 Hugo Chávez gran forjador de lealtades y destructor de capacidades</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/49RegimenChavistaCondenadoaSuFatalextinc2.pdf' target="blank">49 El régimen chavista condenado a su fatal extinción</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/54VirtudDelCatastroficoChavismoVenezolano2.pdf' target="blank">54 Virtud del catastrófico chavismo venezolano</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/59PopulismChavistaReprimeIzqDeVanguardia.pdf' target="blank">59 El populismo chavista reprime a una verdadera izquierda de vanguardia</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/76Venezuelachavistaacercandosealderrumbe2.pdf' target="blank">76 Venezuela chavista: acercándose al derrumbe</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/94Lasdoscarasdelaconfusarealidadgriega2.pdf' target="blank">94 Las dos caras de la confusa realidad griega (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/95Lasdoscarasdelaconfusarealidadgriega.pdf' target="blank">95 Las dos caras de la confusa realidad griega (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/96Lasdoscarasdelaconfusarealidadgriega.pdf' target="blank">96 Las dos caras de la confusa realidad griega (III)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/109Prevalecienteaugedelpopulismo2.pdf' target="blank">109 El prevaleciente auge del populismo (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/111ElprevalecienteaugedelpopulismoII.pdf' target="blank">111 El prevaleciente auge del populismo (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/112PrevalecienteaugedelpopulismoIII.pdf' target="blank">112 El prevaleciente auge del populismo (III)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/113PrevalecienteAugeDelpopulismoIV.pdf' target="blank">113 El prevaleciente auge del populismo (IV)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/114AventandoleDineroAGreciaQueFuncionaConIneficiencia2.pdf' target="blank">114 ¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/115AventandoleDineroAGreciaQueFuncionaConIneficienciaII.pdf' target="blank">115 ¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/116AventandoleDineroAGreciaQueFuncionaConIneficienciaIII.pdf' target="blank">116 ¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (III)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/168DesgarradoraRealidaDeVenezuelaDespertarJuergaPopulismo2.pdf' target="blank">168 Desgarradora realidad de Venezuela al despertar de la juerga de populismo</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/174CausasAbismalsaltoVenezuelaDeAbundanciaaCarestia2.pdf' target="blank">174 Causas del abismal salto venezolano de la abundancia a la agobiante carestía (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/175CausasAbismalsaltoVenezuelaDeAbundanciaaCarestiaII.pdf' target="blank">175 Causas del abismal salto venezolano de la abundancia a la agobiante carestía (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/196ElaugedelpopulismotendraunfrenoenFrancia2.pdf' target="blank">196 El auge del populismo ¿tendrá un freno en Francia?</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/210TLCANacusadosinvisionnirazon2.pdf' target="blank">210 TLCAN acusado sin visión ni razón</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/212GalopanteDesigualdadvigorizaPopulismo2.pdf' target="blank">212 Galopante desigualdad vigoriza al populismo</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/3populismo/JorBC17AscensoyCaidadelregimenChavista.pdf' target="blank">JorBC17 Ascenso y caída del régimen chavista</a></li>
+                    </ul>
+
+
+                    <h3 class="texto-azul">Renegociación del TLCAN</h3>
+                    <ul>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/56AspectsPositivsyNegativsTLCAN2.pdf' target="blank">56 Aspectos positivos y negativos del TLCAN</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/181DebateenEUAyMexBeneficsoPerjuiciosTLCAN2.pdf' target="blank">181 El debate en EUA y México en torno a beneficios o perjuicios del TLCAN (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/182DebateenEUAyMexBeneficsoPerjuiciosTLCANII.pdf' target="blank">182 El debate en EUA y México en torno a beneficios o perjuicios del TLCAN (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/191TrumpsuAmenazanteManeraDeNegociar.pdf' target="blank">191 Trump y su amenazante manera de negociar</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/194DiscursoInauguralTrumpRatificaNecesidaDePrenderAlarmas2.pdf' target="blank">194 Discurso inaugural de Trump ratifica necesidad de prender alarmas</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/195TrumpParteDePremisasEquivocadas.pdf' target="blank">195 Trump parte de premisas equivocadas</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/210TLCANacusadosinvisionnirazon2.pdf' target="blank">210 TLCAN acusado sin visión ni razón</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/216BloqueanAccesoaLaVanguardiaTecnologica2.pdf' target="blank">216 Bloquean acceso a la vanguardia tecnológica</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/217BloqueanAccesoaLaVanguardiaTecnologicaII.pdf' target="blank">217 Bloquean acceso a la vanguardia tecnológica (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/218DesmesuradaemisiondedolaresporEUAI2.pdf' target="blank">218 Desmesurada emisión de dólares por EUA (I)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/219DesmesuradaEmisionDeDolaresxEUAII.pdf' target="blank">219 Desmesurada emisión de dólares por EUA (II)</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/220DolarSobrevaluadoPerjudicaCompetitividaEUA.pdf' target="blank">220 Dólar sobrevaluado perjudica competitividad de EUA</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/222ImperativoAumentarNuestraPrecariaCompetitivida2.pdf' target="blank">222 Imperativo aumentar nuestra precaria competitividad</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/223ConfluenciaDeMultiplesPaisesEnProduccion.pdf' target="blank">223 Confluencia de múltiples países en la producción</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/232NuestroPlanBnoDebieraSerDiversificarComercio2.pdf' target="blank">232 Nuestro Plan B no debiera ser diversificar el comercio</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/262BerrincheTrumpConAmenazasAlG7yMexico2.pdf' target="blank">262 Berrinche de Trump con amenazas al G7 y a México</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/JorBC18ComplejaRenegociacionDelTLCAN2.pdf' target="blank">JorBC18 Compleja renegociación del TLCAN</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/JorBC19AmenazasySalariosenTLCAN.pdf' target="blank">JorBC19 Amenazas y Salarios en el TLCAN</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/JorBC21TorpeErrorTrumpNoRatificarTPP.pdf' target="blank">JorBC21 Torpe error de Trump al no ratificar el TPP</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/JorBC22NoesTLCANelcausantedeldeficitdeEUA2.pdf' target="blank">JorBC22 No es TLCAN el causante del déficit de EUA</a></li>
+                        <li><a href='docs/materiales/dra-rios/actualizado/4reneg_tlcan/JorBC23SobrevaluacDolarUsoFinancmntsIntrnals2.pdf' target="blank">JorBC23 Sobrevaluación del dólar: su uso para financiamientos internacionales</a></li>
+                    </ul>
+
+                    <h3 class="texto-azul">Derecho Constitucional</h3>                    
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/TEMARIO.pdf' target="blank">Temario</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_EL PODER_JUDICIAL.pdf' target="blank">El Poder Judicial</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_ARGUMENTACION_JURIDICA_PORQUE_Y_PARA QUE.pdf' target="blank">Argumentación Jurdídica ¿Porqué y para qué?</a></li>
+                        <li><a href='docs/materiales/dra-rios/1-1_EVOLUCION_DEL_PODER_JUDICIAL.pdf' target="blank">Evolución del Poder Judicial</a></li>
+                        <li><a href='docs/materiales/dra-rios/2_NOTAS_SOBRE_UN_FEDERALISMO_RENOVADO.pdf' target="blank">Notas sobre un Federalismo Renovado</a></li>
+                        <li><a href='docs/materiales/dra-rios/2_CONTROL_DIFUSO_Y_CONCENTRADO.pdf' target="blank">Control Difuso y Concentrado</a></li>
+                        <li><a href='docs/materiales/dra-rios/3_PODER_JUDICIAL_DE_LA_FEDERACION_ORGANIZACION.pdf' target="blank">Poder Judicial de la Federación - Organización </a></li>
+                        <li><a href='docs/materiales/dra-rios/3_CRITERIOS_JURISPRUDENCIALES_EN_MATERIA DE_DERECHOS_HUMANOS.pdf' target="blank">Criterios Jurisprudencia en Materia de Derechos Humanos</a></li>
+                        <li><a href='docs/materiales/dra-rios/4_RESOLUCION_9122010.pdf' target="blank">Resolución</a></li>
+                        <li><a href='docs/materiales/dra-rios/4_LA_FORMULA_DE_PESO_ROBERT.pdf' target="blank">La fórmola de peso Robert Alexy</a></li>
+                        <li><a href='docs/materiales/dra-rios/5_LA_RESOLUCION_DE_CONFLICTOS_ENTRE DERECHOS_FUNDAMENTALES.pdf' target="blank">La resolución de conflictos entre Derechos Fundamentales</a></li>
+                        <li><a href='docs/materiales/dra-rios/5_VOTO_RAZONADO.pdf' target="blank">Voto Razonado</a></li>
+                        <li><a href='docs/materiales/dra-rios/6_PONDERACION_DE_DERECHOS_HUMANOS.pdf' target="blank">Ponderación de Derechos Humanos</a></li>
+                        <li><a href='docs/materiales/dra-rios/7_RECEPCION_DE_LA_JURISPRUDENCIA_INTERNACIONAL_SOBRE_DERECHOS_HUMANOS_POR_LA_JURISPRUDENCIA_CONSTITUCONAL.pdf' target="blank">Recepción de la Jurisprudencia Internacional Sobre Derechos Humanos por la Jurisprudencia Constitucional</a></li>
+                        <li><a href='docs/materiales/dra-rios/DERECHO_CONSTITUCIONAL.pdf' target="blank">Derecho Constitucional</a></li>
+                        <li><a href='docs/materiales/dra-rios/DC_SEGUNDA PARTE.pdf' target="blank">Derecho Constitucional 2da. Parte</a></li>
+                        <li><a href='docs/materiales/dra-rios/HOJA_DE_ACTIVIDADES.pdf' target="blank">Hoja de Actividades</a></li>
+                        <li><a href='docs/materiales/dra-rios/REQUISITOS_DE_ENSAYO.pdf' target="blank">Requisitos de Ensayo</a></li>
+                        <li><a href='docs/materiales/dra-rios/CASOS_PRACTICOS.pdf' target="blank">Casos Prácticos</a></li>
+                    </ol>
+
+                    <h3 class="texto-azul">Sistemas Jurídicos</h3>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/TEMARIO.pdf' target="blank">Temario</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_TERMINOLOGIA_METODO.pdf' target="blank">Terminología y Método</a></li>
+                        <li><a href='docs/materiales/dra-rios/2_FAMILIA_NEORROMANISTA.pdf' target="blank">Familia Neorromanista</a></li>
+                        <li><a href='docs/materiales/dra-rios/3_ELABORACION_NORMA_JUR.pdf' target="blank">Elaboración de la Norma Jurídica en los Países Neorromanistas</a></li>
+                        <li><a href='docs/materiales/dra-rios/4_INGLATERRA.pdf' target="blank">Familia del Common Law Inglaterra</a></li>
+                        <li><a href='docs/materiales/dra-rios/5_USA.pdf' target="blank">Familia del Common Law Estados Unidos de América</a></li>
+                        <li><a href='docs/materiales/dra-rios/6_CANADA_AUSTRALIA.pdf' target="blank">Familia del Common Law Estados Canada y Australia</a></li>
+                        <li><a href='docs/materiales/dra-rios/SISTEMAS_RELIGIOSOS.pdf' target="blank">Sistemas Religiosos</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO1.pdf' target="blank">Cuestionario 1</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO2.pdf' target="blank">Cuestionario 2</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO3.pdf' target="blank">Cuestionario 3</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO4.pdf' target="blank">Cuestionario 4</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO5.pdf' target="blank">Cuestionario 5</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO6.pdf' target="blank">Cuestionario 6</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO7.pdf' target="blank">Cuestionario 7</a></li>
+                        <li><a href='docs/materiales/dra-rios/REQUISITOS_TRABAJO.pdf' target="blank">Requisitos Trabajo</a></li>
+                    </ol>
+
+                    <h3 class="texto-azul">Régimen Jurídico de Comercio Exterior</h3>
+                    <h4 class="texto-azul">Presentaciones</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/PRESENTACION_RJCE.pdf' target="blank">Presentación</a></li>
+                        <li><a href='docs/materiales/dra-rios/6Opcomext_almacenesyplataf.pdf' target="blank">LogísTica Internacional ECO 2215-2012</a></li>
+                    </ol>
+                    <h4 class="texto-azul">Casos Prácticos y Actividades</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/1_Cuestionario_FJI.pdf' target="blank">Cuestionario Fuentes Juridicas Internas</a></li>
+                        <li><a href='docs/materiales/dra-rios/2_Cuestionario_SN.pdf' target="blank">Sistema Nacional De Defensa Contra Practicas Desleales De Comercio Internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/3_CASOS_COMPETENCIA_ECONOMICA.pdf' target="blank">Cuestionario Competencia Económica</a></li>
+                    </ol>
+
+                    <h4 class="texto-azul">Lecturas</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/TEMARIO.pdf' target="blank">Temario</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_INTERCAMBIO_COMERCIAL.pdf' target="blank">Intercambio Comercial y su Importancia para el Desarrollo de la Economía Mundial</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_RJCE_UNAM.pdf' target="blank">Introducción al Comercio Exterior</a></li>
+                        <li><a href='docs/materiales/dra-rios/CHINA_POTENCIA_MUNDIAL_COMERCIAL.pdf' target="blank">China primera Potencia Mundial Comercial</a></li>
+                        <li><a href='docs/materiales/dra-rios/COMERCIO_ELECTRONICO_EN_MEXICO.pdf' target="blank">Los desafíos de la Gobernanza en los Mercados Virtuales (Comercio Electrónico en México)</a></li>
+                        <li><a href='docs/materiales/dra-rios/Competitividad.pdf' target="blank">Competitividad</a></li>
+                        <li><a href='docs/materiales/dra-rios/CREACION_OMC.pdf' target="blank">Creación de la OMC</a></li>
+                        <li><a href='docs/materiales/dra-rios/DUMPING_PRAC_DESLEAL.pdf' target="blank">El dumping, como práctica desleal en el Comercio Internacional Mexicana</a></li>
+                        <li><a href='docs/materiales/dra-rios/EL_INGRESO_DE_MEXICO_AL_GATT.pdf' target="blank">El ingreso de México al Gatt</a></li>
+                        <li><a href='docs/materiales/dra-rios/EL_NO_INGRESO_DE_MEXICO_AL_GATT.pdf' target="blank">El NO ingreso de México al Gatt</a></li>
+                        <li><a href='docs/materiales/dra-rios/Entrevista_Enrique_de_la_Madrid.pdf' target="blank">Entrevista Enrique de la Madrid</a></li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_medidas_salvaguarda.pdf' target="blank">Flujograma del Procedimiento en Materia de Medidas de Salvaguarda</a></li>
+                        <li><a href='docs/materiales/dra-rios/INTEGRACION_ECONOMICA.pdf' target="blank">Integración Económica</a></li>
+                        <li><a href='docs/materiales/dra-rios/LEY_DE_COMERCIO_EXTERIOR.pdf' target="blank">Ley de Comercio Exterior</a></li>
+                        <li><a href='docs/materiales/dra-rios/MEDIOS_DE_PROMOCION.pdf' target="blank">Medios de Promoción Internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/NIVELES_DE_INTEGRACION.pdf' target="blank">Las Negociaciones Comerciales de México en el Marco de los Procesos de Integración Económica</a></li>
+                        <li><a href='docs/materiales/dra-rios/PRINCIPIOS_ESTRUCTURA_DEL_GATT.pdf' target="blank">Principios y Estructura del GATT</a></li>
+                        <li><a href='docs/materiales/dra-rios/TLCAN_E_IMPACTO_EN_EL_SECTOR_TURISTICO.pdf' target="blank">TLCAN, su Impacto en el Sector Turístico</a></li>
+                        <li><a href='docs/materiales/dra-rios/Guia_Basica_sobre_Competencia_Economica_2015.pdf' target="blank">Conceptos básicos sobre competencia económica que deben conocer las organizaciones empresariales y empresas</a></li>
+                        <li><a href='docs/materiales/dra-rios/SN_DE_DEFENSA_CONTRA_PRACTICAS_DESLELES.pdf' target="blank">Sistema Nacional de Defensa Contra Practicas Desleales de Comercio Internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/FUENTES_JURIDICAS_INTERNAS.pdf' target="blank">Fuentes Jurídicas Internas</a></li>
+                    </ol>
+
+                    <h3 class="texto-azul">Curso Intersemestral Régimen Jurídico de Comercio Exterior</h3>
+                    <h4 class="texto-azul">PPT y Temario</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/PRESENTACION_PDF.pdf' target="blank">PPT</a></li>
+                        <li><a href='docs/materiales/dra-rios/TEMARIO.pdf' target="blank">Temario</a></li>
+                        <li><a href='docs/materiales/dra-rios/LEY_DE_COMERCIO_EXTERIOR_PPT.pdf' target="blank">Ley de Comercio Exterior PPT</a></li>
+                    </ol>
+                    <h4 class="texto-azul">Lecturas y Actividades</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/ACTIVIDADES.pdf' target="blank">Actividades</a></li>
+                        <li><a href='docs/materiales/dra-rios/1_INTRODUCCION_AL_COMERCIO INTERNACIONAL.pdf' target="blank">Introducción al Comercio Internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/2_HISTORIA_DEL_DERECHO_MERCANTIL.pdf' target="blank">Historia del derecho mercantil</a></li>
+                        <li><a href='docs/materiales/dra-rios/3_PROCESO_DE_APERTURA_COMERCIAL.pdf' target="blank">￼Explicación teórica del proceso de apertura comercial de la economía</li>
+                        <li><a href='docs/materiales/dra-rios/4_DEL_GATT_A_LA_OMC_LIBRO_DE_WITKER.pdf' target="blank">Del GATT a la OMC</a></li>
+                        <li><a href='docs/materiales/dra-rios/5_PRINCIPIOS_Y_ESTRUCTURA_DEL_GATT.pdf' target="blank">Principios Y Estructura del GATT</a></li>
+                        <li><a href='docs/materiales/dra-rios/6_EL_FUTURO_DEL_SISTEMA_MULTILATERAL_DE_COMERCIO.pdf' target="blank">El Futuro del Sistema Multilateral de Comercio</a></li>
+                        <li><a href='docs/materiales/dra-rios/7_INTEGRACION_ECONOMICA.pdf' target="blank">¿Por qué es Necesaria la Integración Económica en América Latina?</a></li>
+                        <li><a href='docs/materiales/dra-rios/8_FUENTES_JURIDICAS_INTERNAS.pdf' target="blank">Las Fuentes Jurídicas Internas</a></li>
+                        <li><a href='docs/materiales/dra-rios/9_MEXICO_Y_EL_COMERCIO_EXTERIOR.pdf' target="blank">México y el Comercio Exterior</a></li>
+                        <li><a href='docs/materiales/dra-rios/10_EL_DUMPING_COMO_PRACTICA_DESLEAL.pdf' target="blank">El dumping, como práctica desleal en el Comercio Internacional Mexicano</a></li>
+                        <li><a href='docs/materiales/dra-rios/12_LAS_REGLAS_DE_ORIGEN_SUS_EFECTOS_Y_CONSECUENCIAS.pdf' target="blank">Las Reglas de Origen, sus Efectos y Consecuencias</a></li>
+                        <li><a href='docs/materiales/dra-rios/13_EL_COMERCIO_INTERNACIONAL_DE_SERVICIOS.pdf' target="blank">El Comercio Internacional de los Servicios</a></li>
+                        <li><a href='docs/materiales/dra-rios/14_FACTORES_QUE_AFECTAN_LA_INVERSION_EXTRANJERA_DIRECTA.pdf' target="blank">Factores que Afectan a la Inversión Extranjera Directa</a></li>
+                        <li><a href='docs/materiales/dra-rios/15_NOCIONES_GENERALES_DE_LA_SOLUCION_DE_CONTROVERSIAS_INTERNACIONALES.pdf' target="blank">Nociones Generales de la Solución de Controversias Comerciales Internacionales</a></li>
+                        <li><a href='docs/materiales/dra-rios/16_ACUERDO_RELATIVO.pdf' target="blank">Acuerdo Relativo a la Aplicación del Artículo VI del Acuerdo General Sobre Aranceles Aduaneros y Comercio De 1994</a></li>
+                        <li><a href='docs/materiales/dra-rios/EXENCIONES_ARANCELARIAS.pdf' target="blank">Las exenciones arancelarias ante la rueda de negociaciones de la ALADI</a></li>
+                        <li><a href='docs/materiales/dra-rios/LECTURA_ARANCELES.pdf' target="blank">Clasificación de Aranceles; Barreras Arancelarias y No Arancelarias</a></li>
+                    </ol>
+                    <h4 class="texto-azul">Guías de Estudio</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/GUIA1.pdf' target="blank">Guía 1</a></li>
+                        <li><a href='docs/materiales/dra-rios/GUIA2.pdf' target="blank">Guía 2</a></li>
+                    </ol>
+                    <h4 class="texto-azul">Actividades Varias</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/PRESENTACION_PDF.pdf' target="blank">Los desafíos de la Gobernanza en los Mercados Virtuales (Comercio Electrónico en México)</a></li>
+                        <li><a href='docs/materiales/dra-rios/CHINA.pdf' target="blank">China primera potencia mundial comercial</a></li>
+                        <li><a href='docs/materiales/dra-rios/MEDIOS_DE_PROMOCION.pdf' target="blank">Medios de promoción internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/no_arr_oper.pdf' target="blank">No arriesgue sus operaciones</a></li>
+                        <li><a href='docs/materiales/dra-rios/TLACAN_Y_SU_IMPACTO_TURISMO.pdf' target="blank">El Tratado de Libre Comercio de América del Norte (TLCAN), Su Impacto en el Sector Turístico: ¿De qué Manera Favorece a México?</a></li>
+                    </ol>
+                    <h4 class="texto-azul">Flujogramas</h4>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/flujograma_Cobertura_de_producto_2016_1122.pdf' target="blank">Flujograma de Cobertura del Producto</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_de_Aclaracion_2016_1122.pdf' target="blank">Flujograma de Aclaración</a></li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_Elusion_2016_1122.pdf' target="blank">Flujograma de Elusión</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_examen_vigencia.pdf' target="blank">￼Flujograma de Examen de Vigencia</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_extension_beneficios.pdf' target="blank">Flujograma de Extensión de Beneficios</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_margen_individual.pdf' target="blank">Flujograma de Margen Individual a Un Nuevo Exportador</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_medidas_salvaguarda.pdf' target="blank">Flujograma del Procedimiento en Materia de Medidas de Salvaguarda</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_procedimiento_antidumping.pdf' target="blank">Flujograma del Procedimiento Antidumping</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_procedimiento_antisubvencion.pdf' target="blank">Flujograma del Procedimiento Antisubvención</li>
+                        <li><a href='docs/materiales/dra-rios/flujograma_revision.pdf' target="blank">Flujograma del Procedimiento de Revisión</li>
+                    </ol>
+                    <h3 class="texto-azul">Fundamentos de Derecho Internacional Privado</h3>
+                    <ol>
+                        <li><a href='docs/materiales/dra-rios/FUNDAMENTOS DE DIPR.pdf' target="blank">Fundamentos derecho Internacional Privado</a></li>
+                        <li><a href='docs/materiales/dra-rios/ACTIVIDADES_VARIAS.pdf' target="blank">Actividades</a></li>
+                        <li><a href='docs/materiales/dra-rios/ALUMUNIO_CONTRATACION.pdf' target="blank">Cables de Aluminio</a></li>
+                        <li><a href='docs/materiales/dra-rios/C_LEYES_CONFLICTUALES.pdf' target="blank">Leyes Conflictuales</a></li>
+                        <li><a href='docs/materiales/dra-rios/CARASLANIS.pdf' target="blank">Caraslanis</a></li>
+                        <li><a href='docs/materiales/dra-rios/COMPETENCIA_JUDICIAL_INTERNACIONAL.pdf' target="blank">Competencia Judicial Internacional</a></li>
+                        <li><a href='docs/materiales/dra-rios/CUESTIONARIO1.pdf' target="blank">Cuestionario 1</li>
+                        <li><a href='docs/materiales/dra-rios/GUIA DE ESTUDIO1.pdf' target="blank">Guia de Estudio 1</li>
+                        <li><a href='docs/materiales/dra-rios/GUIA ESTUDIO2.pdf' target="blank">Guia de Estudio 2</li>
+                        <li><a href='docs/materiales/dra-rios/GUILLERMO_CONQUISTADOR.pdf' target="blank">Guillermo Conquistador</a></li>
+                        <li><a href='docs/materiales/dra-rios/HISTORIA_DEL_DIPR.pdf' target="blank">Historia Derecho Internacional Privado</li>
+                        <li><a href='docs/materiales/dra-rios/REGLAS_DE_CONFLICTO.pdf' target="blank">Reglas de Conflicto</li>
+                        <li><a href='docs/materiales/dra-rios/SIST_CONFLICTUAL.pdf' target="blank">Sistema Conflictual Mexicano</li>
+                    </ol>                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--M A T E R I A L E S -->
+    <div class="modal fade" id="materiales-mtra-bobadilla" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title texto-dorado centrado" id="exampleModalLabel">Materiales - Mtra. Zaudisareth Bobadilla Castillo</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="texto-azul">Teoría de la Constitución</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtra-bobadilla/TEMARIO_TC_2017-1.pdf' target="_blank">Temario</a></li>
+                        <li><a href='https://youtu.be/kFJf3AI6oUE' target="_blank">Microlección 1. ¿Qué es para Fernando Savater la sociedad?</a></li>
+                        <li><a href='https://youtu.be/6-Bisiixlos' target="_blank">Microlección 2. ¿Cómo sería una sociedad sin conflictos?</a></li>
+                        <li><a href='https://youtu.be/fiSOuWUcaEQ' target="_blank">Microlección 3. ¿Cuál fue la gran invención griega y cómo la diferencias de la romana?</a></li>
+                        <li><a href='https://youtu.be/WhpxyVrmaUM' target="_blank">Microlección 4. ¿En qué consiste la corresponsabilidad social?</a></li>
+                        <li><a href='https://youtu.be/6oo9jWyzTPE' target="_blank">Documental "La Revolución Francesa"</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/La_norma_fundamental_1.pdf' target="_blank">La norma fundamental</a></li>
+                        <li><a href='http://www.miguelcarbonell.com/artman/uploads/1/Marbury_versus_Madison.pdf' target="_blank">Marbury versus Madison</a></li>
+                        <li><a href='https://youtu.be/m4ME6nYzyY8' target="_blank">Derechos Humanos - Video 1</a></li>
+                        <li><a href='https://youtu.be/haujKg_PXGQ' target="_blank">Derechos Humanos - Video 2</a></li>
+                        <li><a href='https://youtu.be/w-wwSERIEJY' target="_blank">Derechos Humanos - Video 3</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_1_TC.pdf' target="_blank">Glosario Unidad 1 TC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_2_TEORIA_DE_LA_CONSTITUCION.pdf' target="_blank">Glosario Unidad 2 TC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/Glosario_Unidades_3_y_4_TC.pdf' target="_blank">Glosario Unidades 3 y 4 TC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/Glosario_Unidad_5_TC.pdf' target="_blank">Glosario Unidad 5 TC </a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/Glosarios_Unidades_6_7_y_8_TC.pdf' target="_blank">Glosario Unidades 6, 7 y 8 TC </a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_9_TC.pdf' target="_blank">Glosario Unidad 9 TC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/Glosario_Unidades_10_11_y_12_TC.pdf' target="_blank">Glosario Unidades 10, 11 y 12 TC</a></li>
+                    </ol>
+                    <h3 class="texto-azul">Derecho Constitucional</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtra-bobadilla/TEMARIO_TC_2017-1.pdf' target="_blank">Temario</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/CUESTIONARIO_UNIDAD_1_DC.pdf' target="_blank">Cuestionario Unidad 1</a></li>
+                        <li><a href='http://bibliohistorico.juridicas.unam.mx/libros/1/233/6.pdf' target="_blank">Nacionalidad impropia por accesión</a></li>
+                        <li><a href='https://youtu.be/r3r3x7JZ1XQ' target="_blank">Persona en situación de calle que obtiene credencial para votar con fotografía</a></li>
+                        <li><a href='https://youtu.be/1CUmtkpq0Dc' target="_blank">El voto nulo</a></li>
+                        <li><a href='http://www.juridicas.unam.mx/publica/librev/rev/dialjur/cont/9/cnt/cnt15.pdf' target="_blank">La suspensión del ejercicio de los derechos político electorales</a></li>
+                        <li><a href='https://youtu.be/uA7lmVWu8BI' target="_blank">Usos y costumbres de los pueblos indígenas (el caso de Eufrosina Cruz Mendoza).</a></li>
+                        <li><a href='http://bibliohistorico.juridicas.unam.mx/libros/1/402/5.pdf' target="_blank">La Nación Mexicana y los pueblos indígenas</a></li>
+                        <li><a href='http://www.almomento.mx/impunidad-o-multas-ridiculas-para-embarcaciones-extranjeras-que-danan-coral-mexicano' target="_blank">Embarcaciones extranjeras dañan arrecifes mexicanos</a></li>
+                        <li><a href='https://youtu.be/_aHihNa276M' target="_blank">Abanderamiento de embarcaciones</a></li>
+                        <li><a href='http://www.bbc.com/mundo/noticias/2015/05/150503_islas_mar_china_meridional_disputa_men' target="_blank">¿Por qué preocupan tanto las islas que China está construyendo?</a></li>
+                        <li><a href='http://bibliohistorico.juridicas.unam.mx/libros/3/1325/5.pdf' target="_blank">El Sistema Nacional de Coordinación Fiscal</a></li>
+                        <li><a href='https://youtu.be/WKZ_Y7cuNik' target="_blank">¿Qué es el Congreso de la Unión? </a></li>
+                        <li><a href='http://m.redpolitica.mx/nacion/por-que-los-presidentes-ya-no-entregan-informe-en-el-congreso' target="_blank">¿Por qué los Presidentes ya no entregan informe en el Congreso?</a></li>
+                        <li><a href='https://youtu.be/O5ek5JzYcgU' target="_blank">¿Qué es la Comisión Permanente?</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_2015-1.pdf' target="_blank">Glosario Unidad 1 DC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_2_DC.pdf' target="_blank">Glosario Unidad 2 DC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_3_DC.pdf' target="_blank">Glosario Unidad 3 DC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDAD_4_DC.pdf' target="_blank">Glosario Unidad 4 DC</a></li>
+                        <li><a href='docs/materiales/mtra-bobadilla/GLOSARIO_UNIDADES_5_6_7_Y_8.pdf' target="_blank">Glosario Unidad 5, 6, 7 y 8 </a></li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--M A T E R I A L E S -->
+    <div class="modal fade" id="materiales-mtro-martinez" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title texto-dorado centrado" id="exampleModalLabel">Materiales - Mtro. Alejo Martínez Vendrell</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="texto-azul">Finanzas Públicas</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtro-martinez/228_MaleficioDelendeudamntoSinCrecimnto.pdf' target="_blank">Maleficio del endeudamiento sin crecimiento</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/227_FinanzasPublsAtenazadasxDeudayJubilaciones2.pdf' target="_blank">Finanzas públicas atenazadas por deuda y jubilaciones</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/Hemerografia_de_Finanzas_Publicas.pdf' target="_blank">Hemerografía de Finanzas Públicas</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/17_AparatoGubernamental_honestoyEficiente2.pdf' target="_blank">Aparato gubernamental honesto y eficiente</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/18_AportacionesSignificativasENIGH2012.pdf' target="_blank">Aportaciones significativas de la ENIGH 2012</a></li>                        
+                        <li><a href='docs/materiales/mtro-martinez/30_EstamosPoniendoCarretaAdelanteDlosBueyes2.pdf' target="_blank">Estamos poniendo la carreta adelante de los bueyes</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/31_RomperCadenasSubdesaroloExigeEsfuerzsySacrifcs2.pdf' target="_blank">Romper las cadenas del subdesarrollo exige esfuerzos y sacrificios</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/34_ReformHacendariaFrenaraInversionProductiva2.pdf' target="_blank">La Reforma Hacendaria ¿frenará la inversión productiva?</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/37_InvolutivaMutacDel_presidnclsmoAl feuderalism2.pdf' target="_blank">Una involutiva mutación: del presidencialismo al “feuderalismo” I</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/38_InvolutivaMutacDelpresidnclsmo2.pdf' target="_blank">Una involutiva mutación: del presidencialismo al “feuderalismo” II</a></li>        
+                        <li><a href='docs/materiales/mtro-martinez/39_InvolutivaMutacDelpresidenclsmo.pdf' target="_blank">Una involutiva mutación: del presidencialismo al “feuderalismo” III</a></li>        
+                        <li><a href='docs/materiales/mtro-martinez/40_InvolutivaMutacDelpresidenclsmo2.pdf' target="_blank">Una involutiva mutación: del presidencialismo al “feuderalismo” (IV)</a></li>        
+                        <li><a href='docs/materiales/mtro-martinez/67_BarbaricRespaldoPodersFedsAl atracoDEdos yMuncpsI.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios I</a></li>        
+                        <li><a href='docs/materiales/mtro-martinez/68_BarbaricRespaldoPodersFedsAlatracoDEdosyMuncpsII2.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios II</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/69_BarbaricRespaldoPodersFedsAlatracoDEdosyMuncpsIII.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios III</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/70_BarbaricRespaldoPodersFedsAlatracoDEdosyMuncpsIV2.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios IV</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/71_BarbaricRespaldoPodersFedsAlatracoDEdosyMuncpsV.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios V</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/72_BarbaricRespaldoPodersFedsAlatracoDEdosyMuncpsVI2.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios VI</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/97_AuditoriaCuentaPublc2013_AsomAIneficiencyCorrupc2.pdf' target="_blank">Barbárico respaldo de los 3 poderes federales al atraco de estados y municipios II</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/102_PosibilidadsImplantarPresupstoBaseCero.pdf' target="_blank">Posibilidades de implantar a cabalidad un Presupuesto Base Cero (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/103_PosibilidadsImplantarPresupstoBaseCero.pdf' target="_blank">Posibilidades de implantar a cabalidad un Presupuesto Base Cero (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/104_PosibilidadsImplantarPresupstoBaseCero2.pdf' target="_blank">Posibilidades de implantar a cabalidad un Presupuesto Base Cero (III)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/121_LimitacionesPresupstalesExigenEnfrentarDeficiencias2.pdf' target="_blank">Severas limitaciones presupuestales exigen enfrentar con firmeza las graves deficiencias</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/122_HenrietteCaillauxCelosaCuidadoraPrestigioEsposo2.pdf' target="_blank">La impresionante Henriette Caillaux, celosa protectora del prestigio de su amado esposo</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/125_MexNecesitaMasDelgastoGubernamental.pdf' target="_blank">México espera y necesita mucho más del gasto gubernamental</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/126RacionalizarGastoGbnosLocalesyOrgAutonms2.pdf' target="_blank">Indispensable racionalizar el gasto de gobiernos estatales, municipales y de organismos autónomos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/139_AltastasasimpositivasrecetadePiketty2.pdf' target="_blank">Altas tasas impositivas: receta de Piketty</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/176_EconomiaMundialTopaNoFuncionaEstrategiaKeynesiana2.pdf' target="_blank">La economía mundial se topa con que ya no nos está funcionando la estrategia keynesiana</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/177_RepercusionesDeInfructuosoEndeudamientoPubl2.pdf' target="_blank">Repercusiones de un infructuoso endeudamiento público</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/178_RepercusionesDeInfructuosoEndeudamntopublicII.pdf' target="_blank">Repercusiones de un infructuoso endeudamiento público (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/180_NiLosPIDIREGASlograronConstituirseComoDeudaProductiva2.pdf' target="_blank">La SHCP requiere de dotes taumatúrgicas, pero los milagros son muy difíciles</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/JorBC4SistemaNalAnticorrupcyLey3de3_2.pdf' target="_blank">El Sistema Nacional Anticorrupción y la #Ley3de3</a></li>                        
+                    </ol>
+                    <h3 class="texto-azul">Modernidad Tecnológica, Concentración del Ingreso y Empleo</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtro-martinez/25_SeverConflictoEmpleoyModernizacTecnologc2.pdf' target="_blank">Severo conflicto entre empleo y modernización tecnológica</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/26.pdf' target="_blank">La concentración del ingreso: creciente obstácolo contra el desarrollo</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/27.pdf' target="_blank">Nuestro más acaudalado 1% se está obstacolizando su propio crecimiento</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/28_DeslumbranteAvanceHumanidadyLadoNegativo2.pdf' target="_blank">El deslumbrante avance de la humanidad trajo también sus lados negativos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/44_CrucialimportancCrecimntoEconom.pdf' target="_blank">La crucial importancia del crecimiento económico</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/58_ModernizacyProgresoAgudizanProblemsDempleo2.pdf' target="_blank">Modernización y progreso agudizan los problemas de empleo</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/98_MundoDeAbundancyArmoniaPreveiaKeynes2030.pdf' target="_blank">El mundo de abundancia y armonía que preveía Keynes para el 2030 (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/99_MundoDeAbundancyArmoniaPreveiaKeynes2030.pdf' target="_blank">El mundo de abundancia y armonía que preveía Keynes para el 2030 (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/100_PorquePredicKeynesnohaCristalizado.pdf' target="_blank">¿Por qué la visionaria predicción de Keynes no se ha plasmado en nuestra realidad?</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/129_TorridoDebateSobreTPPoAsociacTransPacifico2.pdf' target="_blank">El tórrido debate en torno al TPP o Acuerdo de Asociación Transpacífico (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/138_PikettyTendenciaaConcentracIngreso2.pdf' target="_blank">Piketty expone la brutal tendencia a la concentración del ingreso</a></li>                        
+                        <li><a href='http://jornadabc.mx/opinion/30-10-2016/auge-tecnologico-trae-trastornos-en-el-empleo-y-disminucion-de-ingresos' target="_blank">Auge tecnológico trae trastornos en el empleo y disminución de ingresos</a></li>
+                        <li><a href='http://jornadabc.mx/opinion/28-11-2016/el-transito-de-la-sociedad-industrial-la-postindustrial-o-del-conocimiento' target="_blank">El tránsito de la sociedad industrial a la postindustrial o del conocimiento</a></li>                        
+                        <li><a href='http://jornadabc.mx/opinion/26-02-2017/concentracion-del-ingreso-factor-de-desestabilizacion-social' target="_blank">Concentración del ingreso: factor de desestabilización social</a></li>                        
+                        <li><a href='docs/materiales/mtro-martinez/211_CrecienteDivorcioEntreGobiernosySociedades2.pdf' target="_blank">Creciente divorcio entre gobiernos y sociedades</a></li>
+                    </ol>
+                    <h3 class="texto-azul">Renegociación del TLCAN</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtro-martinez/56_AspectsPositivsyNegativsTLCAN2.pdf' target="_blank">Aspectos positivos y negativos del TLCANa</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/181_DebateenEUAyMexBeneficsoPerjuiciosTLCAN2.pdf' target="_blank">El debate en EUA y México en torno a beneficios o perjuicios del TLCAN (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/182_DebateenEUAyMexBeneficsoPerjuiciosTLCAN2.pdf' target="_blank">El debate en EUA y México en torno a beneficios o perjuicios del TLCAN (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/191TrumpsuAmenazanteManeraDeNegociar.pdf' target="_blank">Trump y su amenazante manera de negociar</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/194_DiscursoInauguralTrumpRatificaNecesidaDePrenderAlarmas2.pdf' target="_blank">Discurso inaugural de Trump ratifica necesidad de prender alarmas</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/195_TrumpParteDePremisasEquivocadas.pdf' target="_blank">Trump parte de premisas equivocadas</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/210_TLCANacusadosinvisionnirazon2.pdf' target="_blank">TLCAN acusado sin visión ni razón</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/216_BloqueanAccesoaLaVanguardiaTecnologica2.pdf' target="_blank">Bloquean acceso a la vanguardia tecnológica</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/217_BloqueanAccesoaLaVanguardiaTecnologica2.pdf' target="_blank">Bloquean acceso a la vanguardia tecnológica (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/218_DesmesuradaemisiondedolaresporEUAI2.pdf' target="_blank">Desmesurada emisión de dólares por EUA (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/219_DesmesuradaEmisionDeDolaresxEUAII.pdf' target="_blank">Desmesurada emisión de dólares por EUA (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/220_DolarSobrevaluadoPerjudicaCompetitividaEUA.pdf' target="_blank">Dólar sobrevaluado perjudica competitividad de EUA</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/222_ImperativoAumentarNuestraPrecariaCompetitivida2.pdf' target="_blank">Imperativo aumentar nuestra precaria competitividad</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/JorBC18_ComplejaRenegociacionDelTLCAN2.pdf' target="_blank">Compleja renegociación del TLCAN</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/223.pdf' target="_blank">Confluencia de múltiples países en la producción</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/JorBC19_AmenazasySalariosenTLCAN.pdf' target="_blank">Amenazas y salarios en el TLCAN</a></li>
+                    </ol>
+                    <h3 class="texto-azul">Teoría Política</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtro-martinez/23_MexAnteUnaDefinitoriaEncrucijada2.pdf' target="_blank">México ante una definitoria encrucijada</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/45_IzquierdavsDerechaperoConciliables2.pdf' target="_blank">Izquierda vs Derecha ¿Son irreconciliables? I</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/46_Izquierda_vsDerechaperoConciliables.pdf' target="_blank">Izquierda vs Derecha ¿Son irreconciliables? II</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/48_DecadenciaPartidosTraegravesriesgos2.pdf' target="_blank">Decadencia de nuestros partidos trae graves riesgos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/51_SocialdemocracHaLogradoCombinarIzqyDrcha2.pdf' target="_blank">Socialdemocracia: ha logrado combinar armónicamente los valores de izquierda y derecha</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/60_NuestrosPartidosCachaTodoLacraqNosAfecta2.pdf' target="_blank">Nuestros distorsionados partidos cacha-todo, una lacra que nos afecta</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/110_OpuestasCorrientsPensamntoEsclarecenFuncCoercion2.pdf' target="_blank">Dos opuestas corrientes de pensamiento esclarecen la crucial función de la coerción</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/170ProgresoTecnicoFactorDeIntegracoDeConflictoSocial.pdf' target="_blank">El progreso técnico ¿factor de integración o de conflicto social?</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/171_UsoFuerzaPublicaVistaPorEstudiososPolitica2.pdf' target="_blank">Uso de la fuerza pública vista por estudiosos de la política (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/172_UsoFuerzaPublicaVistaPorEstudiososPoliticaII.pdf' target="_blank">Uso de la fuerza pública vista por estudiosos de la política (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/173_UsoFuerzaPublicaVistaPorEstudiososPoliticaIII.pdf' target="_blank">Uso de la fuerza pública vista por estudiosos de la política (III)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/189_CrecienteDisfuncionalidyDesconfianzaPartidosP2.pdf' target="_blank">Creciente disfuncionalidad y desconfianza en los partidos políticos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/190_HipotesisExplicativaDivorcioSociedadyPartidos2.pdf' target="_blank">Hipótesis explicativa sobre el creciente divorcio entre sociedad y partidos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/198_DisfuncionalevolucionDeLosPartidos2.pdf' target="_blank">Disfuncional evolución de los partidos</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/211_CrecienteDivorcioEntreGobiernosySociedades2.pdf' target="_blank">Creciente divorcio entre gobiernos y sociedades</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/224_Porquefracasanlospaises2.pdf' target="_blank">Por qué fracasan los países (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/225_PorquefracasanlospaisesII.pdf' target="_blank">Por qué fracasan los países (II)</a></li>
+                    </ol>
+                    <h3 class="texto-azul">Populismo</h3>
+                    <ol>
+                        <li><a href='docs/materiales/mtro-martinez/1_HugoChavezGranForjadorLealtadsDestructorCapacids2.pdf' target="_blank">Hugo Chávez gran forjador de lealtades y destructor de capacidades</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/49_RegimenChavistaCondenadoaSuFatalextinc2.pdf' target="_blank">El régimen chavista condenado a su fatal extinción</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/54_VirtudDelCatastroficoChavismoVenezolano2.pdf' target="_blank">Virtud del catastrófico chavismo venezolano</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/59.pdf' target="_blank">El popolismo chavista reprime a una verdadera izquierda de vanguardia</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/76_Venezuelachavistaacercandosealderrumbe2.pdf' target="_blank">Venezuela chavista: acercándose al derrumbe</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/94_Lasdoscarasdelaconfusarealidadgriega2.pdf' target="_blank">Las dos caras de la confusa realidad griega (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/95_Lasdoscarasdelaconfusarealidadgriega.pdf' target="_blank">Las dos caras de la confusa realidad griega (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/96_Lasdoscarasdelaconfusarealidadgriega.pdf' target="_blank">Las dos caras de la confusa realidad griega (III)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/109.pdf' target="_blank">El prevaleciente auge del popolismo (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/111.pdf' target="_blank">El prevaleciente auge del popolismo (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/112.pdf' target="_blank">El prevaleciente auge del popolismo (III)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/113.pdf' target="_blank">El prevaleciente auge del popolismo (IV)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/114.pdf' target="_blank">¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/115.pdf' target="_blank">¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/116.pdf' target="_blank">¿Es inteligente seguir aventándole dinero a una empresa o país que funcionan con enorme ineficiencia? (III)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/168.pdf' target="_blank">Desgarradora realidad de Venezuela al despertar de la juerga de popolismo</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/174_CausasAbismalsaltoVenezuelaDeAbundanciaaCarestia2.pdf' target="_blank">Causas del abismal salto venezolano de la abundancia a la agobiante carestía (I)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/175_CausasAbismalsaltoVenezuelaDeAbundanciaaCarestiaII.pdf' target="_blank">Causas del abismal salto venezolano de la abundancia a la agobiante carestía (II)</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/196.pdf' target="_blank">El auge del popolismo ¿tendrá un freno en Francia?</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/210_TLCANacusadosinvisionnirazon2.pdf' target="_blank">TLCAN acusado sin visión ni razón</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/212.pdf' target="_blank">Galopante desigualdad vigoriza al popolismo</a></li>
+                        <li><a href='docs/materiales/mtro-martinez/JorBC17AscensoyCaidadelregimenChavista.pdf' target="_blank">Ascenso y caída del régimen chavista</a></li>
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/plugins.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>   
