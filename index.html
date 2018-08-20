@@ -111,8 +111,7 @@
                     <div class="col-md-12">
                         <div class="center gap fade-down section-heading">
                             <h2 class="main-title texto-dorado">¿Quiénes somos?</h2>
-                            <hr>
-                            <h4 class="texto-dorado">Bienvenidos</h4>
+                            <hr>                            
                         </div>                
                     </div>
                 </div>
@@ -163,7 +162,10 @@
                                 <div id="caja" class="center">
                                     <button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-dr-patinio">
                                         Curriculum
-                                    </button>                                                                    
+                                    </button> 
+                                    <button type="button" class="btn btn-outline-info caja-dorada" data-toggle="modal" data-target="#publicaciones-dr-patinio">
+                                        Publicaciones
+                                    </button>                                                                   
                                 </div>
                             </blockquote>
                         </div>
@@ -176,9 +178,9 @@
                                 <small>Secretario de Extensión</small>
                                 <br>
                                 <div id="caja" class="center">
-                                    <!--<button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-mtro-martinez">
+                                    <button type="button" class="btn btn-outline-info caja-azul" data-toggle="modal" data-target="#curr-mtro-martinez">
                                         Curriculum
-                                    </button>-->                                
+                                    </button>                                
                                     <button type="button" class="btn btn-outline-info caja-dorada" data-toggle="modal" data-target="#publicaciones-mtro-martinez">
                                         Publicaciones
                                     </button>
@@ -647,16 +649,13 @@
 	                            <ol class="carousel-indicators">
 	                                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
 	                                <li data-target="#quote-carousel" data-slide-to="1"></li>
-	                                <li data-target="#quote-carousel" data-slide-to="2"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="3"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="4"></li>
-                                    <li data-target="#quote-carousel" data-slide-to="5"></li>
+	                                <li data-target="#quote-carousel" data-slide-to="2"></li>                                    
 	                            </ol>                                
 	                            <!-- Carousel Slides / Quotes -->
 	                            <div class="carousel-inner">                                
 	                              <!-- Quote 1 -->
 
-                                    <div class="item">
+                                    <div class="item active">
                                         <blockquote>
                                             <div class="row">                                                
                                                 <div class="col-sm-3 text-center">
@@ -671,7 +670,7 @@
                                         </blockquote>
                                     </div>
 
-	                                <div class="item active">
+	                                <!--<div class="item active">
 	                                    <blockquote>
 	                                        <div class="row">
 	                                            <div class="col-sm-3 text-center">
@@ -683,11 +682,11 @@
 	                                        </div>
 	                                    </blockquote>
 	                                </div>
-	                                <!-- Quote 2 -->
+	                                 Quote 2 -->
                                     
 	                                
                                     
-	                                <!-- Quote 3 -->
+	                                <!-- Quote 3 
 	                                <div class="item">
 	                                    <blockquote>
 	                                        <div class="row">                                                
@@ -700,8 +699,8 @@
 	                                        </div>
 	                                    </blockquote>
 	                                </div>
-                                    <!-- Quote 4-->
-                                    <div class="item">
+                                     Quote 4-->
+                                    <!--<div class="item">
                                         <blockquote>
                                             <div class="row">                                                
                                                 <div class="col-sm-3 text-center">
@@ -714,7 +713,7 @@
                                                 </div>                                                
                                             </div>
                                         </blockquote>
-                                    </div>
+                                    </div>-->
                                     <!-- Quote 4-->
                                     <div class="item">
                                         <blockquote>
@@ -1160,9 +1159,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <iframe src="https://h5p.org/h5p/embed/285614" width="1090" height="252" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>                                      
-                </div>
-                <a href="docs/curriculum-completo.pdf" target="_blank"><h4 class="texto-dorado">&nbsp;Ver curriculum completo</h4></a>            
+                    <iframe src="https://h5p.org/h5p/embed/285614" width="1090" height="252" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+                    <ul>
+                        <li class="butt"><a href="docs/curriculum-completo.pdf" target="_blank"><h4 class="texto-dorado"> Curriculum completo</h4></a></li>
+                    </ul>                                       
+                </div>                            
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
@@ -1276,6 +1277,27 @@
                 </div>
                 <div class="modal-body">
                     <iframe src="https://h5p.org/h5p/embed/286113" width="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="curr-mtro-martinez" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title center texto-dorado" id="exampleModalLabel">Curriculum Mtro. Alejo Martínez Vendrell</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="butt"><a href="docs/Curriculum_AMV_7.pdf" target="_blank"><h4 class="texto-dorado">Curriculum completo</h4></a></li>
+                    </ul>                                        
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -1420,7 +1442,30 @@
                 </div>
                 <div class="modal-body">                    
                     <ol>
-                        <li class="butt" ><a href="docs/publicaciones/mtro_martinez/publicaciones_alejo_agos16.pdf" target="_blank">Artículos periodísticos AMV</a></li>                        
+                        <li class="butt" ><a href="docs/publicaciones/mtro_martinez/ArticulosPeriodisticosPorTemas.pdf" target="_blank">Artículos periodísticos AMV</a></li>  
+                        <li class="butt" ><a href="docs/publicaciones/mtro_martinez/ej79preliminaresRPMyAMVDerechoEconom.pdf" target="_blank">Derecho Económico: ariete contra los oligopolios y escudo de los consumidores</a></li>  
+                        <li class="butt" ><a href="docs/publicaciones/mtro_martinez/FukuyamaSecuenciaTransicionesaDemocracia.pdf" target="_blank">Fukuyama: Secuencia de las Transiciones a la Democracia</a></li>                        
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="publicaciones-dr-patinio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title texto-dorado centrado" id="exampleModalLabel">Publicaciones Dr. Ruperto Patiño Manffer</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <ol>
+                        <li class="butt" ><a href="docs/publicaciones/mtro_martinez/ej79preliminaresRPMyAMVDerechoEconom.pdf" target="_blank">Derecho Económico: ariete contra los oligopolios y escudo de los consumidores</a></li>
                     </ol>
                 </div>
                 <div class="modal-footer">
