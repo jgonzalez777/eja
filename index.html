@@ -16,7 +16,7 @@
     <script type="text/javascript" src="js/formularios.js"></script>          
     <link rel="icon" type="image/png" href="images/eja/logos/logo1-sin-letras.png">
     <script type="text/javascript">
-    jQuery(document).ready(function($){
+    jQuery(document).ready(function($){ 
 	'use strict';
       	jQuery('body').backstretch([
 	        "images/eja/home/f1.jpg",
@@ -632,7 +632,29 @@
                 </div>  
                 <div class="gap"></div>
                 <div id="pricing-table" class="row">
-                    <div class="col-md-4 col-xs-12 flip-in">
+					  <div class="col-md-3 col-xs-12 flip-in">
+                        <ul class="plan plan2 featured" style="background-color: #091f92;">
+                            <li class="plan-name">
+                                <h3>Leyes y justicia - Trump, el muro y los migrantes</h3>
+                            </li>
+                            <li style="font-weight: bold;">
+                                Dra. Ruperto
+                            </li>
+                            <li style="font-weight: bold;">
+                                Patiño
+                            </li>
+                            <li style="font-weight: bold;">
+                                Manffer
+                            </li>     
+                            <li class="plan-action">
+<br>
+                                <button type="button" class="btn btn-outline-info caja-dorada" data-toggle="modal" data-target="#v-rmp-1">
+                                       Ver video
+                                    </button>
+                            </li>
+                        </ul>
+                    </div><!--/.col-md-3-->
+                	<div class="col-md-3 col-xs-12 flip-in">
                         <ul class="plan plan1">
                             <li class="plan-name">
                                 <h3>Colegiación del Jurísta en el Entorno del Siglo XXI </h3>
@@ -650,8 +672,8 @@
                                 <a href="docs/colegiacion_abogados.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
                             </li>
                         </ul>
-                    </div><!--/.col-md-3-->
-                    <div class="col-md-4 col-xs-12 flip-in">
+                    </div>  
+                    <div class="col-md-3 col-xs-12 flip-in no-display animated flipInY appear">
                         <ul class="plan plan2 featured" style="background-color: #091f92;">
                             <li class="plan-name">
                                 <h3>Ley General de Transparencia y Acceso a la Información Pública </h3>
@@ -670,7 +692,7 @@
                             </li>
                         </ul>
                     </div><!--/.col-md-3-->
-                    <div class="col-md-4 col-xs-12 flip-in">
+                    <div class="col-md-3 col-xs-12 flip-in">
                         <ul class="plan plan3">
                             <li class="plan-name">
                                 <h3>Avatares de la Reforma Política Capitalina</h3>
@@ -685,6 +707,7 @@
                                 Chavarría
                             </li>     
                             <li class="plan-action">
+								<br>
                                 <a href="docs/avatares_reforma_politica.pdf" target="_blank" class="btn btn-outlined btn-primary btn-md btn-white">Descargar</a>
                             </li>
                         </ul>
@@ -2139,6 +2162,32 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary caja-dorada" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!--
+		V Í D E O S   N U E V O S
+	-->
+	<!-- C U R R I C U L U M S  -->
+    <div class="modal fade" id="v-rmp-1" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title center texto-dorado" id="exampleModalLabel">Leyes y Justicia - Trump, el Muro y los migrantes</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <ul class="center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iB6aF03__m4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </ul>                                       
+                </div>                            
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
